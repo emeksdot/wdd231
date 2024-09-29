@@ -1,17 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beginning Page</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header><h1>Hello WDD 231</h1></header>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <script src="scripts/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img
+          src="images/emeka_profile.webp"
+          alt="Emeka Thomas Profile Picture"
+          width="200"
+        />
+        <h1>Emeka T. Onwugbonu</h1>
+      </div>
+      <div id="mode">
+        🕶️
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Chamber</a></li>
+          <li><a href="https://github.com/emeksdot">GitHub Profile</a></li>
+          <li><a href="https://www.linkedin.com/in/emeksdot/">LinkedIn</a></li>
+        </ul>
+      </nav>
+      
+    </header>
     <main>
-        <img src="https://images.pexels.com/photos/1071882/pexels-photo-1071882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+      <!-- <img src="https://images.pexels.com/photos/1071882/pexels-photo-1071882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""> -->
+      <section>
+        <h2>Course Work</h2>
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Port Harcourt, Nigeria</h2>
+      </section>
+      <section>
+        <h2>Web and Computer Programming Certificate</h2>
+      </section>
     </main>
-    <footer></footer>
-</body>
+    <footer>
+      <p>&copy;<span id="currentyear"></span> 🌴🌴Emeka Thomas Onwugbonu🌴</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
 </html>
