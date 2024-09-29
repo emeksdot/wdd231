@@ -31,6 +31,10 @@ footer {
   color: aliceblue;
 }
 
+h1, h2{
+  font-family: "Rubik", sans-serif;
+}
+
 header {
   display: flex;
   flex-direction: column;
