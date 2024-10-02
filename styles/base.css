@@ -1,85 +1,141 @@
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 900
-
-.rubik-<uniquifier> {
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", system-ui;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
-
-
-
-
-header,
-main,
-footer {
-  max-width: 780px;
-  margin: 1rem auto;
+.container {
   border: 1px solid red;
-  background-color: rgba(6, 146, 34, 0.6);
-  color: aliceblue;
-}
-
-h1, h2{
-  font-family: "Rubik", sans-serif;
+  max-width: 600px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  justify-items: center;
+  padding: 0 0.5rem;
+  min-height: 100vh;
 }
 
 header {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: space-around;
-  align-content: center;
-  position: relative;
-}
-
-.header-container{
-  display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.header-container img{
-  width: 20%;
-  margin-right: 1rem;
-}
-.header-container h1{
-/* margin-left: -1rem; */
-margin-right: auto;
-}
-
-.header-container, nav{
+  position: relative;
   width: 100%;
-
 }
 
-nav{
-  background-color: #fff;
-  padding: .25rem 0;
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 100%;
 }
 
-nav ul{
-  display: none;
+.header-container img {
+  width: 150px;
+  height: auto;
 }
 
-nav:hover ul{
-  display: block;
+.header-container h1 {
+  margin-left: 2rem;
 }
 
-#mode{
+#mode {
   font-size: 2.5rem;
   position: absolute;
   top: 1rem;
   right: 0.5rem;
+  cursor: pointer;
+  font-weight: 700;
+  display: block;
+}
+
+#mode::before {
+  content: "≡";
+  position: absolute;
+  right: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  align-self: center;
+}
+
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  width: 100%;
+  text-align: center;
+  border: 1px solid green;
+  margin-inline: auto;
+  height: 3.125rem;
+}
+
+nav a {
+  text-decoration: none;
+  justify-self: center;
+  align-self: center;
+  display: block;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.show li {
+  display: none;
+}
+
+h2 {
+  background-color: red;
+  text-align: center;
+  padding: 1rem;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.course-work{
+  box-shadow: -4px 4px 6px grey, 4px -4px 6px grey;
+}
+
+.city{
+  box-shadow: -4px 4px 6px grey, 4px -4px 6px grey;
+
+}
+
+.web-certificate{
+  width: 100%;
+  box-shadow: -4px 4px 6px grey, 4px -4px 6px grey;
+} 
+
+.upper {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.upper-btns{
+  padding: .125rem 2.5rem;
+}
+
+.lower{
+  display: flex;
+  flex-direction: column;
+  border-top: 5px solid #000;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.lower-items{
+display: block;
+width: 100%;
+
+}
+
+footer{
+  text-align: center;
 }

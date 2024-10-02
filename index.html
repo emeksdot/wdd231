@@ -1,70 +1,92 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emeka Thomas Onwugbonu - WDD 231 - Web Frontend Development</title>
 
-    <meta name="description"
-    content="WDD 231 - Web Frontend Development course Homepage by Emeka Thomas Onwugbonu">
+    <meta
+      name="description"
+      content="WDD 231 - Web Frontend Development course Homepage by Emeka Thomas Onwugbonu"
+    />
 
-  <meta name="author" content="Emeka Thomas Onwugbonu">
+    <meta name="author" content="Emeka Thomas Onwugbonu" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
 
     <script src="scripts/index.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <img
-          src="images/emeka_profile.webp"
-          alt="Emeka Thomas Profile Picture"
-          width="200"
-        />
-        <h1>Emeka T. Onwugbonu</h1>
-      </div>
-      <div id="mode">
-        🕶️
-      </div>
+    <div class="container">
+      <header>
+        <div class="header-container">
+          <img
+            src="images/emeka_profile.webp"
+            alt="Emeka Thomas Profile Picture"
+            width="200"
+          />
+          <h1>Emeka T. Onwugbonu</h1>
+        </div>
+        <div id="mode"></div>
+        <!-- <div id="mode">🕶️</div> -->
+      </header>
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="#">Home</a></li>
           <li><a href="#">Chamber</a></li>
           <li><a href="https://github.com/emeksdot">GitHub Profile</a></li>
           <li><a href="https://www.linkedin.com/in/emeksdot/">LinkedIn</a></li>
         </ul>
       </nav>
-      
-    </header>
-    <main>
-      <!-- <img src="https://images.pexels.com/photos/1071882/pexels-photo-1071882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""> -->
-      <section>
-        <h2>Course Work</h2>
-        <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-        </ul>
-      </section>
-      <section>
-        <h2>Port Harcourt, Nigeria</h2>
-      </section>
-      <section>
-        <h2>Web and Computer Programming Certificate</h2>
-      </section>
-    </main>
-    <footer>
-      <p>&copy;<span id="currentyear"></span> 🌴🌴Emeka Thomas Onwugbonu🌴</p>
-      <p id="lastModified"></p>
-    </footer>
+      <main>
+        <!-- <img src="https://images.pexels.com/photos/1071882/pexels-photo-1071882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""> -->
+        <section class="course-work">
+          <h2>Course Work</h2>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
+        <section class="city">
+          <h2>Port Harcourt, Nigeria</h2>
+          <picture>
+            <source media="(min-width: 650px)" srcset="images/port-profile.webp">
+            <source media="(min-width: 465px)" srcset="images/port-profile.webp">
+            <img src="images/port-profile.webp" alt="A Ship at the Onne Port" width="250">
+            <caption>A Ship at The Onne Port</caption>
+          </picture>
+        </section>
+        <section class="web-certificate">
+          <h2>Web and Computer Programming Certificate</h2>
+          <div class="upper">
+            <button class="upper-btns">ALL</button>
+            <button class="upper-btns">CSE</button>
+            <button class="upper-btns">WDD</button>
+          </div>
+          <div class="lower">
+            <button class="lower-items">CSE 110</button>
+            <button class="lower-items">WDD 130</button>
+            <button class="lower-items">CSE 111</button>
+            <button class="lower-items">CSE 210</button>
+            <button class="lower-items">WDD 131</button>
+            <button class="lower-items">WDD 231</button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>&copy;<span id="currentyear"></span> 🌴🌴Emeka Thomas Onwugbonu🌴</p>
+        <p id="lastModified"></p>
+      </footer>
+    </div>
   </body>
 </html>
