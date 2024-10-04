@@ -43,4 +43,14 @@
   .lower-items {
     width: 10rem;
   }
+
+  .btn{
+    width: 20%;
+    /* col */
+  }
+
+  .lower{
+    display: flex;
+    gap: 1rem;
+flex-wrap: wrap;  }
 }

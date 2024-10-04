@@ -135,26 +135,13 @@ const createCard = (cardArray) => {
       let card = document.createElement("section");
       let name = document.createElement("h3");
       
-    //   let location = document.createElement("p");
-    //   let dedicationDate = document.createElement("p");
-    //   let area = document.createElement("p");
-    //   let img = document.createElement("img");
-    
   
       name.innerText = `${course.subject} ${course.number}`;
-    //   location.innerHTML = ` <span class="tag">Location: </span>${temple.location}`;
-    //   dedicationDate.innerHTML = `<span class="tag">Dedicated on:</span>  ${temple.dedicated}`;
-    //   area.innerHTML = `<span class="tag">Area in sq ft:</span> ${temple.area}`;
-    //   img.setAttribute("src", `${temple.imageUrl}`);
-    //   img.setAttribute("alt", `${temple.templeName}`);
-    //   img.setAttribute("loading", "lazy");
-    //   img.setAttribute("width", "800");
-    //   img.setAttribute("height", "500");
+      card.setAttribute("class", `btn`);
   
       card.appendChild(name);
     
   
-      card.setAttribute("class", "card");
   
       document.querySelector(".lower").appendChild(card);
     });
