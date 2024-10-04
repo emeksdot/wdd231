@@ -1,5 +1,5 @@
 .container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   max-width: 800px;
   margin-inline: auto;
   display: grid;
@@ -11,12 +11,14 @@
 }
 
 header {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   position: relative;
   width: 100%;
+  border: 3px solid rgb(214,121,118);
+  border-radius: 5px;
 }
 
 .header-container {
@@ -24,18 +26,24 @@ header {
   justify-content: center;
   align-items: center;
   border: 1px solid black;
+  background-color: rgb(238,203,202);
   width: 100%;
+  padding: 1rem auto;
 }
 
 .header-container img {
   width: 150px;
   height: auto;
+  margin-block: 1rem;
 }
 
 .header-container h1 {
   margin-left: 2rem;
 }
 
+h1, h2{
+  font-family: "Rubik", sans-serif;
+}
 #mode {
   font-size: 2rem;
   background: none;
@@ -68,6 +76,9 @@ nav {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
+  margin-top: 1rem;
+  border: 3px solid rgb(214,121,118);
+  border-radius: 10px;
 }
 
 nav ul {
@@ -79,9 +90,15 @@ nav ul {
 nav ul li {
   width: 100%;
   text-align: center;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   margin-inline: auto;
   height: 3.125rem;
+  border-radius: 5px;
+}
+
+nav li:first-child {
+  margin-right: auto;
+  background-color: rgb(214,121,118);
 }
 
 nav a {
@@ -93,14 +110,25 @@ nav a {
   padding-top: 1rem;
   border-radius: 5px;
   text-align: center;
+  font-family: "Montserrat", system-ui;
+  font-weight: 600;
 }
+
+nav a:hover {
+  background-color: #fff;
+  border-right: 2px solid rgb(99,105,209);
+  border-bottom: 2px solid rgb(99,105,209);
+  border-radius: 5px;
+}
+
 
 .show li {
   display: none;
 }
 
 h2 {
-  background-color: red;
+  background-color: rgba(214,121,118, 0.2);
+  color: rgb(6,65,82);
   text-align: center;
   padding: 1rem;
   margin-top: 0rem;
@@ -129,6 +157,7 @@ section{
   margin-top: 1rem;
   overflow: hidden;
   border-radius: 5px;
+  border: 3px solid rgb(214,121,118);
 }
 
 .city p{
@@ -149,6 +178,10 @@ section{
 
 .upper-btns{
   padding: .125rem 2.5rem;
+  font-family: "Montserrat", system-ui;
+  font-size: 1.2rem;
+  font-weight: 600;
+
 }
 
 .lower{
@@ -168,8 +201,11 @@ width: 100%;
 
 footer{
   text-align: center;
-  border: 1px solid green;
+  font-family: "Montserrat", system-ui;
   width: 100%;
+  background-color: rgb(238,203,202);
+  border-radius: 5px;
+  border: 3px solid rgb(214,121,118);
 }
 
 .card {
@@ -192,4 +228,22 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.completed{
+  background-color: rgb(99,105,209);
+  color: #ffffff;
+  margin: 1rem;
+  width: 95%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p{
+  font-family: "Montserrat", system-ui;
+  font-weight: 600;
 }

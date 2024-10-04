@@ -48,6 +48,11 @@
     width: 20%;
     /* col */
   }
+  
+  .completed{
+    width: 20%;
+
+  }
 
   .lower{
     display: flex;
