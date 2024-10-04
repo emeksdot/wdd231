@@ -1,3 +1,7 @@
+body{
+  background-color: rgba(148, 148, 245, 0.2);
+}
+
 .container {
   /* border: 1px solid red; */
   max-width: 800px;
@@ -246,4 +250,8 @@ footer{
 p{
   font-family: "Montserrat", system-ui;
   font-weight: 600;
+}
+
+.active::before{
+content: "🌴";
 }
