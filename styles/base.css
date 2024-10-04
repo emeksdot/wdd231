@@ -1,6 +1,6 @@
 .container {
   border: 1px solid red;
-  max-width: 600px;
+  max-width: 800px;
   margin-inline: auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -37,22 +37,31 @@ header {
 }
 
 #mode {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  background: none;
+  color: #000;
   position: absolute;
-  top: 1rem;
-  right: 0.5rem;
-  cursor: pointer;
   font-weight: 700;
-  display: block;
+
+  right: 7%;
+  top: 20px;
+
+}
+
+.hide {
+  display: none;
 }
 
 #mode::before {
-  content: "≡";
-  position: absolute;
-  right: 10px;
-  font-size: 2rem;
-  font-weight: 700;
-  align-self: center;
+  content: "✖️";
+}
+
+#mode.open::before {
+  content: "☰";
+}
+
+.open a {
+  display: block;
 }
 
 nav {
@@ -94,6 +103,7 @@ h2 {
   background-color: red;
   text-align: center;
   padding: 1rem;
+  margin-top: 0rem;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
@@ -103,13 +113,32 @@ h2 {
 }
 
 .city{
+  display: flex;
+  flex-direction: column;
   box-shadow: -4px 4px 6px grey, 4px -4px 6px grey;
+  justify-content: center;
 
+}
+
+.city picture{
+  margin-inline: auto;
+
+}
+
+section{
+  margin-top: 1rem;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.city p{
+  text-align: center;
 }
 
 .web-certificate{
   width: 100%;
   box-shadow: -4px 4px 6px grey, 4px -4px 6px grey;
+  margin-bottom: 1rem;
 } 
 
 .upper {
@@ -138,4 +167,15 @@ width: 100%;
 
 footer{
   text-align: center;
+  border: 1px solid green;
+  width: 100%;
+}
+
+.card {
+  /* border: 2px solid var(--contrast-color); */
+  padding: 1rem .5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: var(--nav-background-color);
 }
