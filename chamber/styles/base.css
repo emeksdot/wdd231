@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 960px;
+    border: 2px solid rgb(131, 3, 3);
+    margin: 1rem auto;
+    position: relative;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 0.5rem;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 940px;
+}
+
+header, nav, main, footer{
+    max-width: 940px;
+}
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+    align-items: center;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+  }
+
+  ul li a img{
+    margin-right: 0.5rem;
+  }
+  
+  .logo{
+    border: 2px solid red;
+
+  }
+
+.lower-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+  }
+
+  nav li {
+    height: 50px;
+    margin-top: 0.5rem;  
+    /* width: 100%; */
+  }
+
+  nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    color: black;
+  }
+  nav a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  nav li:first-child {
+    margin-right: auto;
+    /* background-color: red; */
+  }
+
+  .logo-text{
+    font-size: 1.5rem;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .sidebar li {
+    width: 100%;
+  }
+  
+  .sidebar a {
+    width: 100%;
+  }
+  
+  .menu-button{
+    display: none;
+  }
+
+  @media (max-width: 400px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+.banner{
+    height: 60%;
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+    aspect-ratio: 19/9;
+}
