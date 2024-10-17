@@ -77,6 +77,7 @@ const displayResults = (data) => {
 
   const ic = document.createElement("img");
   ic.setAttribute("src", iconsrc);
+  ic.setAttribute("alt", "Weather icon");
   const temp = document.createElement("h3");
   const description = document.createElement("p");
   const maxTemp = document.createElement("p");
