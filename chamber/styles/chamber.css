@@ -39,6 +39,25 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: rgb(6,65,82);
+
+
+}
+
+.active{
+  background-color: white;
+  border: 1px solid green;
+  padding: 0.5rem;
+}
+nav ul li a:hover {
+  color: white;
+
+  background-color: rgba(6,65,82, 0.6);;
+  padding: 0.5rem;
+  border: 6px;
+  transition: all 0.25s ease;
 }
 
 .menu-icon {
@@ -81,11 +100,39 @@ nav ul li a {
   float: right;
 }
 
+.buttonLink{
+  font-size: 2.5rem;
+  position: absolute;
+  bottom:  1rem;
+  left:  65%;
+  text-decoration: none;
+  background-color: #f98178;
+  border: 2px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: aqua;
+}
+
+.buttonLink:hover{
+  color: rgb(6,65,82);
+  background-color: aqua;
+  transition: all 0.25s ease;
+}
+h2{
+  background-color: #f98178;
+}
+
 main {
   clear: right;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto 4fr 3fr;
+}
+
+.upper-box section{
+  border: 1px solid rgb(89, 81, 81);
+  border-radius: 8px;
+
 }
 
 h1 {
@@ -99,6 +146,7 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   gap: 1.875rem;
   border: 3px solid green;
+  padding: 0.5rem 0.5rem;
 
 }
 .events {
@@ -155,7 +203,7 @@ h1 {
 .card {
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
+  border: 1px solid rgb(89, 81, 81);
   padding: 0.5rem 1rem;
   border-radius: 6px;
   width: 300px;
@@ -237,6 +285,14 @@ justify-content: space-between;
     padding: 20px;
     list-style-type: none;
     margin-bottom: 0.125rem;
+  }
+
+  .buttonLink{
+    font-size: 1.5rem;
+    position: absolute;
+    bottom:  10rem;
+    left:  40%;
+    text-decoration: none;
   }
 
   .menu-icon {

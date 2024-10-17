@@ -6,6 +6,10 @@ hamburger.addEventListener("click", () => {
   ul.classList.toggle("hide");
   //   ul.classList.toggle("open");
 });
+
+let lastModif = new Date(document.lastModified);
+const modified = document.querySelector("#lastModified");
+modified.innerHTML = lastModif;
 const date = new Date();
 const daysOfWeek = [
   "Sunday",
