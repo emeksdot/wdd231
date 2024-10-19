@@ -1,0 +1,109 @@
+{
+  "members": [
+    {
+      "name": "Berger Paints",
+      "address": "70, Ordinance Road, Trans-Amadi Industrial Layout, Port Harcourt",
+      "phone": "+2348102164862",
+      "webURL": "https://www.bergerpaintsnig.com/",
+      "imageURL": "https://www.finelib.com/images/listings/tn/69087_company_logo.JPG",
+      "membershipLevel": "gold",
+      "extraINFO": ""
+    },
+    {
+      "name": "Brightway Glove",
+      "address": "3 High Tension Road, Ekorokoro Community, Aleto, Eleme,  Port Harcourt",
+      "phone": "+2348072918381",
+      "webURL": "https://brightwayglove.com/",
+      "imageURL": "https://www.finelib.com/images/listings/tn/69125_company_logo.JPG",
+      "membershipLevel": "gold",
+      "extraINFO": "Leaders in high quality industrial, medical and chemical gloves."
+    },
+    {
+      "name": "SC Industrial Gas Manufacturers Ltd",
+      "address": "KM 3 Igboetche Road, Rumukurushi Port Harcourt",
+      "phone": "+2348053391019",
+      "webURL": "http://scgases.com/Home/",
+      "imageURL": "https://www.finelib.com/images/listings/tn/36148_company_logo.JPG",
+      "membershipLevel": "gold",
+      "extraINFO": ""
+    },
+    {
+      "name": "Bougainvillea Hotel",
+      "address": "Plot F / 1A Abacha Road, GRA, Phase 3,  Port Harcourt",
+      "phone": "+2348037923000",
+      "webURL": "https://bougainvilleahotel.com/",
+      "imageURL": "https://www.finelib.com/images/listings/tn/7503_company_logo.JPG",
+      "membershipLevel": "gold",
+      "extraINFO": "For excellent room service, fitness center, swimming pool, conference rooms etc"
+    },
+    {
+      "name": "L.A Kings Hotel",
+      "address": "31, Ken Saro Wiwa Road (old Stadium Road), Port harcourt",
+      "phone": "+2348157419434",
+      "webURL": "https://www.lakingshotels.com/",
+      "imageURL": "https://www.finelib.com/images/listings/tn/7502_company_logo.JPG",
+      "membershipLevel": "gold",
+      "extraINFO": "Offering efficient and quality service delivery"
+    },
+
+    {
+      "name": "Kedi Healthcare Services",
+      "address": "191 Ikwerre Road by AP Filling Station, Mile 3, Port Harcourt",
+      "phone": "+2347031959796",
+      "webURL": "https://www.kedihealth.com/",
+      "imageURL": "https://www.finelib.com/images/listings/tn/87971_company_logo.JPG",
+      "membershipLevel": "gold",
+      "extraINFO": "Producers and distributors of herbal health products"
+    },
+
+    {
+      "name": "Cita International School",
+      "address": "1 CITA Close, Rumuogba Housing Estate, Port Harcourt",
+      "phone": "+2349099125177",
+      "webURL": "https://cita-international-school.eschools.co.uk/web",
+      "imageURL": "https://www.finelib.com/images/listings/tn/45442_company_logo.JPG",
+      "membershipLevel": "gold",
+      "extraINFO": ""
+    },
+
+    {
+      "name": "Cinfores Limited",
+      "address": "No 60 Prof. T.N. Okujagu Road, Off Dr. Peter Odili Road, Trans Amadi Industrial Layout",
+      "phone": "+2349038059682",
+      "webURL": "https://www.cinfores.com/",
+      "imageURL": "https://www.finelib.com/images/listings/tn/45469_company_logo.JPG",
+      "membershipLevel": "gold",
+      "extraINFO": "For excellent software production and education solutions and services"
+    },
+
+    {
+      "name": "Kedico Sport Nigeria Ltd",
+      "address": "92, Ikwerre Road, Mile 2 Diobu, Port-Harcourt",
+      "phone": "+2348037097151",
+      "webURL": "N/A",
+      "imageURL": "https://www.finelib.com/images/listings/tn/1788_company_logo.JPG",
+      "membershipLevel": "gold",
+      "extraINFO": ""
+    },
+
+    {
+      "name": "Dial Travels",
+      "address": "22, Ohaeto street, Port-Harcourt",
+      "phone": "+2348097737030",
+      "webURL": "https://dialtravels.com/",
+      "imageURL": "https://www.finelib.com/images/listings/tn/1794_company_logo.JPG",
+      "membershipLevel": "gold",
+      "extraINFO": "Service delivery on travels, tours and airlines booking and more"
+    },
+
+    {
+      "name": "Multifreight Nigeria Ltd",
+      "address": "No 70 Ordinance Road, Trans Amadi Industrial Layout, Port Harcourt",
+      "phone": "+2348154654653",
+      "webURL": "http://multifreightnig.com",
+      "imageURL": "https",
+      "membershipLevel": "gold",
+      "extraINFO": ""
+    }
+  ]
+}
