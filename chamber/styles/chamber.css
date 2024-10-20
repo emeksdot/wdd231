@@ -424,6 +424,10 @@ justify-content: space-between;
   /* grid-template-columns: 1fr; */
 }
 
+.directory-heading{
+  text-align: center;
+}
+
 .directory-main{
   display: grid;
   grid-template-columns: 1fr;
