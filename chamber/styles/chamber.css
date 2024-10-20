@@ -414,3 +414,81 @@ justify-content: space-between;
     height: auto;
   }
 }
+
+
+
+/* CSS Rules for the Directory Page */
+
+.directory-container{
+  display: grid;
+  /* grid-template-columns: 1fr; */
+}
+
+.directory-main{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.menu{
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: rgb(23, 34, 54);
+  margin-bottom: 1rem;
+}
+.directory-content{
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 0.5rem;
+
+  column-gap: 30px;
+  row-gap: 30px;
+  /* font-size: 1.1rem; */
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.grid p:first-child{
+  display: none;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section:nth-child(even) {
+  background-color: rgb(23, 34, 54);
+  color: #efefef;
+
+}
+
+.directory-card{
+  box-shadow: 0 5px 15px rgb(23, 34, 54);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.directory-grid{
+  display: grid;
+
+}
+.directory-list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}

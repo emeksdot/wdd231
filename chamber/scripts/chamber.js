@@ -116,7 +116,7 @@ const displayResults = (data) => {
 
 const displayForecast = (data) => {
   const foreCastContainer = document.createElement("div");
-  foreCastContainer.setAttribute("class", "forecastContainer")
+  foreCastContainer.setAttribute("class", "forecastContainer");
   const firstDay = document.createElement("div");
   const secondDay = document.createElement("div");
   const thirdDay = document.createElement("div");
@@ -129,18 +129,75 @@ const displayForecast = (data) => {
   forecast.appendChild(foreCastContainer);
 };
 
-
-
-
 function double() {
-    Promise.all([apiFetch(), apiForecast()])
-      .then(data => {
-         const response1 = data[0];
-         displayResults(data[0])
-         const response2 = data[1];
-         displayForecast(data[1])
-      })
-  }
+  Promise.all([apiFetch(), apiForecast()]).then((data) => {
+    const response1 = data[0];
+    displayResults(data[0]);
+    const response2 = data[1];
+    displayForecast(data[1]);
+  });
+}
 double();
 
+// Script for the directory page
 
+const contentPane = document.querySelector(".directory-content");
+
+const gridButton = document.querySelector(".gridButton");
+const listButton = document.querySelector(".listButton");
+const display = document.querySelector("article");
+
+const dataLink = "https://emeksdot.github.io/wdd231/chamber/data/members.json";
+
+async function fetchContent() {
+  try {
+    const response = await fetch(dataLink);
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data.members);
+      displayCards(data.members);
+    } else {
+      throw Error(await response.text());
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+function displayCards(data) {
+  data.forEach((member) => {
+    const card = document.createElement("section");
+    card.setAttribute("class", "directory-card");
+    const name = document.createElement("p");
+    const image = document.createElement("img");
+    const address = document.createElement("p");
+    const phone = document.createElement("p");
+    const webURL = document.createElement("a");
+
+    name.innerText = `${member.name}`
+    image.setAttribute("src", member.imageURL);
+    image.setAttribute("alt", member.name);
+    address.innerText = `${member.address}`;
+    phone.innerText = `${member.phone}`;
+    webURL.innerText = `${member.webURL}`;
+
+    card.append(name, image, address, phone, webURL);
+    contentPane.appendChild(card);
+  });
+}
+
+fetchContent();
+
+gridButton.addEventListener("click", () => {
+  contentPane.classList.add("grid");
+  contentPane.classList.remove("list");
+});
+listButton.addEventListener("click", () => {
+  contentPane.classList.add("list");
+  contentPane.classList.remove("grid");
+});
+
+function showList() {
+  display.classList.add("list");
+  display.classList.remove("grid");
+}

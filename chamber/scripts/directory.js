@@ -1,7 +1,19 @@
-const contentPane = document.querySelector(".directory-content");
 
 
+gridbutton.addEventListener("click", () => {
+    // contentPane = "";
+  const members = fetchContent();
+  members.forEach((element) => {
+    let imageAddress = `${element.imageURL}`;
+    
 
-const fetchContent = (data) => { 
+    image.setAttribute("src", imageAddress);
+    address.innerHTML = `${element.address}`;
+    phone.innerHTML = `${element.phone}`;
+    webURL.innerHTML = `${element.webURL}`;
+    
+  });
 
- }
+});
+
+fetchContent()
