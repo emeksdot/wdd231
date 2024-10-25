@@ -9,14 +9,17 @@ body {
   width: 100%;
 }
 
-
-
 .container {
   max-width: 960px;
   margin: 0 auto;
   border: 1px solid red;
 }
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Rubik", serif;
 }
 
@@ -41,12 +44,10 @@ nav ul li a {
   text-decoration: none;
   padding: 0.5rem;
   font-size: 1.2rem;
-  color: rgb(6,65,82);
-
-
+  color: rgb(6, 65, 82);
 }
 
-.active{
+.active {
   background-color: white;
   border: 1px solid green;
   padding: 0.5rem;
@@ -54,7 +55,7 @@ nav ul li a {
 nav ul li a:hover {
   color: white;
 
-  background-color: rgba(6,65,82, 0.6);;
+  background-color: rgba(6, 65, 82, 0.6);
   padding: 0.5rem;
   border: 6px;
   transition: all 0.25s ease;
@@ -100,11 +101,11 @@ nav ul li a:hover {
   float: right;
 }
 
-.buttonLink{
+.buttonLink {
   font-size: 2.5rem;
   position: absolute;
-  bottom:  1rem;
-  left:  65%;
+  bottom: 1rem;
+  left: 65%;
   text-decoration: none;
   background-color: #f98178;
   border: 2px solid black;
@@ -113,12 +114,12 @@ nav ul li a:hover {
   color: aqua;
 }
 
-.buttonLink:hover{
-  color: rgb(6,65,82);
+.buttonLink:hover {
+  color: rgb(6, 65, 82);
   background-color: aqua;
   transition: all 0.25s ease;
 }
-h2{
+h2 {
   background-color: #f98178;
 }
 
@@ -129,10 +130,9 @@ main {
   grid-template-rows: auto 4fr 3fr;
 }
 
-.upper-box section{
+.upper-box section {
   border: 1px solid rgb(89, 81, 81);
   border-radius: 8px;
-
 }
 
 h1 {
@@ -147,7 +147,6 @@ h1 {
   gap: 1.875rem;
   border: 3px solid green;
   padding: 0.5rem 0.5rem;
-
 }
 .events {
   grid-column: 1 / 3;
@@ -164,20 +163,20 @@ h1 {
   border-top-right-radius: 6px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-  "h2 h2"
-  "first second"
-  ;
+  grid-template-areas:
+    "h2 h2"
+    "first second";
   margin-bottom: 0.5rem;
-}.current h2{
+}
+.current h2 {
   grid-area: h2;
 }
 
-.img-container{
+.img-container {
   grid-area: first;
 }
 
-.text-content{
+.text-content {
   text-align: left;
   grid-area: second;
 }
@@ -208,7 +207,7 @@ h1 {
   border-radius: 6px;
   width: 300px;
 }
-.card img{
+.card img {
   width: 60px;
   height: auto;
   margin-top: 1rem;
@@ -227,19 +226,19 @@ h1 {
   gap: 1rem;
 }
 
-.desc-text{
+.desc-text {
   margin-top: 0.5rem;
 }
-.desc-text p{
+.desc-text p {
   font-size: 0.9rem;
   margin-left: -0.5rem;
 }
-.desc-text span{
-font-weight: 700;
-font-family: "Rubik", serif;
+.desc-text span {
+  font-weight: 700;
+  font-family: "Rubik", serif;
 }
 
-footer{
+footer {
   display: flex;
   justify-content: space-around;
   /* justify-content: space-between; */
@@ -248,19 +247,19 @@ footer{
 }
 
 .media-box {
-display: flex;
-align-items: center;
-justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.media-box img{
+.media-box img {
   width: 1.5rem;
   height: auto;
 }
 
-.normalText{
+.normalText {
   font-weight: normal;
 }
-.forecastContainer{
+.forecastContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -268,8 +267,32 @@ justify-content: space-between;
 }
 
 /*  */
+/* Rules for Join Page */
+.join-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
-@media (max-width: 600px) {
+.form-wrapper {
+  grid-column: 1 / 2;
+}
+.form-wrapper form{
+  width: 400px;
+}
+
+.membership-wrapper {
+  grid-column: 2 / 3;
+}
+
+.form-wrapper label {
+  display: block;
+  font-size: 1.2rem;
+  color: purple;
+  padding-top: 0.2rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 640px) {
   nav ul {
     position: absolute;
     top: 3.75rem;
@@ -287,11 +310,11 @@ justify-content: space-between;
     margin-bottom: 0.125rem;
   }
 
-  .buttonLink{
+  .buttonLink {
     font-size: 1.5rem;
     position: absolute;
-    bottom:  10rem;
-    left:  40%;
+    bottom: 10rem;
+    left: 40%;
     text-decoration: none;
   }
 
@@ -389,12 +412,12 @@ justify-content: space-between;
     grid-column: 1 / 2;
     border: 1px solid white;
     text-align: center;
-  
+
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
   }
 
-  footer{
+  footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -402,45 +425,61 @@ justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
   }
-  
+
   .media-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem auto;
   }
-  .media-box img{
+  .media-box img {
     width: 1.5rem;
     height: auto;
   }
+
+  /* Rules for Join Page */
+  .join-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .join-main {
+    grid-row: 1 / 2;
+  }
+  .join-main h2{
+    text-align: center;
+  }
+
+  .membership-wrapper{
+    grid-column: 1 /2;
+    grid-row: 2 / 3;
+  }
 }
-
-
 
 /* CSS Rules for the Directory Page */
 
-.directory-container{
+.directory-container {
   display: grid;
   /* grid-template-columns: 1fr; */
 }
 
-.directory-heading{
+.directory-heading {
   text-align: center;
 }
 
-.directory-main{
+.directory-main {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.menu{
+.menu {
   text-align: center;
   font-size: 1.5rem;
   padding: 1rem;
   background-color: rgb(23, 34, 54);
   margin-bottom: 1rem;
 }
-.directory-content{
+.directory-content {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -450,34 +489,32 @@ justify-content: space-between;
   row-gap: 30px;
   /* font-size: 1.1rem; */
   font-family: "Montserrat", sans-serif;
-
 }
 
-.grid p:first-child{
+.grid p:first-child {
   display: none;
 }
 .list {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .list section {
-	display: grid;
-	grid-template-columns: 1fr 2fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  margin: 0;
+  padding: 0.25rem;
 }
 .list section img {
-	display: none; /* smaller viewports only */
+  display: none; /* smaller viewports only */
 }
 
 .list section:nth-child(even) {
   background-color: rgb(23, 34, 54);
   color: #efefef;
-
 }
 
-.directory-card{
+.directory-card {
   box-shadow: 0 5px 15px rgb(23, 34, 54);
   display: flex;
   flex-direction: column;
@@ -487,12 +524,10 @@ justify-content: space-between;
   padding: 1rem;
 }
 
-.directory-grid{
+.directory-grid {
   display: grid;
-
 }
-.directory-list{
+.directory-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
 }
