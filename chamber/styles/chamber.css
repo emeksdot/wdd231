@@ -23,6 +23,10 @@ h6 {
   font-family: "Rubik", serif;
 }
 
+header{
+  margin-bottom: 1rem;
+}
+
 nav {
   padding: 10px 30px;
   display: flex;
@@ -442,6 +446,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
   }
   .join-main {
     grid-row: 1 / 2;
