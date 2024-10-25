@@ -23,10 +23,6 @@ h6 {
   font-family: "Rubik", serif;
 }
 
-header{
-  margin-bottom: 1rem;
-}
-
 nav {
   padding: 10px 30px;
   display: flex;
@@ -73,7 +69,6 @@ nav ul li a:hover {
 
 .logo {
   display: flex;
-  /* color: white; */
   font-size: 1.2rem;
 }
 .text-box {
@@ -111,7 +106,7 @@ nav ul li a:hover {
   bottom: 1rem;
   left: 65%;
   text-decoration: none;
-  background-color: #f98178;
+  background-color: rgb(249, 129, 120);
   border: 2px solid black;
   padding: 0.5rem 1rem;
   border-radius: 6px;
@@ -330,10 +325,7 @@ footer {
     transition: all 0.75s ease-out;
   }
 
-  .logo {
-    display: flex;
-    /* color: white; */
-  }
+  
   .logo-svg {
     border: 1px solid purple;
   }
@@ -371,7 +363,7 @@ footer {
     content: "☰";
   }
 
-  .open span {
+  .open li {
     display: block;
   }
 
@@ -446,7 +438,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
+    
   }
   .join-main {
     grid-row: 1 / 2;

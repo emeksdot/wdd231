@@ -33,7 +33,9 @@
     />
 
     <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/chamber.css" />
+    <!-- <link rel="stylesheet" href="styles/chamber.css" /> -->
+    <link rel="stylesheet" href="styles/chamber-base.css" />
+    <link rel="stylesheet" href="styles/chamber-large.css" />
 
     <script src="scripts/chamber.js" defer></script>
   </head>
@@ -151,7 +153,15 @@
         <!-- <form action="thankyou.html" method="get"></form> -->
          <div class="membership-wrapper">
           <h2>Membership Levels</h2>
-         <div class="card-holder"></div>
+         <div class="card-holder">
+          <form action="thankyou.html" method="get" class="join-form">
+            <fieldset>
+              <legend>Personal Information</legend>
+              <label>First name*<input type="text" id="fname" title="First Name" autocomplete="birth-name" required /></label>
+              <label>Last name*<input type="text" id="lname" title="Last Name" autocomplete="family-name" required /></label>
+            </fieldset>
+            </form>
+         </div>
          </div>
       </main>
       <footer>

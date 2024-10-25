@@ -1,0 +1,58 @@
+@media screen and (min-width: 760px) {
+    header nav{
+        display: flex;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        top: -0.65rem;
+        flex: 1 1 100%;
+        gap: 30px;
+        justify-content: center;
+        background-color: transparent;
+        
+    }
+    nav ul li{
+        display: flex;
+    }
+
+    nav a{
+        padding: 0.5rem;
+
+    }
+
+    .ham-icon {
+        display: none;
+    }
+
+    /* Rules for Join Page */
+.join-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  
+  .form-wrapper {
+    grid-column: 1 / 2;
+  }
+  .form-wrapper form{
+    width: 400px;
+  }
+  
+  .membership-wrapper {
+    grid-column: 2 / 3;
+    display: inline-block;
+  }
+  
+  .form-wrapper label {
+    display: block;
+    font-size: 1.2rem;
+    color: purple;
+    padding-top: 0.2rem;
+    margin-right: 1rem;
+  }
+
+
+    
+}
