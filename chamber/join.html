@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Port Harcourt Chamber of Commerce Join Page</title>
 
     <link rel="icon" href="favicon.ico" />
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
-    <meta name="author" content="Emeka Thomas Onwugbonu">
+    <meta name="author" content="Emeka Thomas Onwugbonu" />
     <meta
       name="description"
-      content="Emeka Thomas Onwugbonu Port Harcourt City Chamber of Commerce join page">
+      content="Emeka Thomas Onwugbonu Port Harcourt City Chamber of Commerce join page"
+    />
     <meta
       property="og:title"
-      content="Emeka Thomas Onwugbonu Port Harcourt City Chamber of Commerce join page ">
-    <meta property="og:type" content="website">
+      content="Emeka Thomas Onwugbonu Port Harcourt City Chamber of Commerce join page "
+    />
+    <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://emeksdot.github.io/wdd231/chamber/join.html">
+      content="https://emeksdot.github.io/wdd231/chamber/join.html"
+    />
     <meta
       property="og:image"
-      content="https://github.com/emeksdot/wdd231/blob/main/chamber/images/banner.webp">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      content="https://github.com/emeksdot/wdd231/blob/main/chamber/images/banner.webp"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
     <!-- <link rel="stylesheet" href="styles/chamber.css" /> -->
-    <link rel="stylesheet" href="styles/chamber-base.css">
-    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/chamber-base.css" />
+    <link rel="stylesheet" href="styles/chamber-large.css" />
 
     <script src="scripts/chamber.js" defer></script>
   </head>
@@ -66,92 +71,104 @@
             /><span class="ham-icon"></span>
           </div>
         </nav>
-        
       </header>
       <main class="join-main">
         <div class="form-wrapper">
           <h2>Membership Application Form</h2>
-        <form action="thankyou.html" method="get" class="join-form">
-          <fieldset>
-            <legend>Personal Information</legend>
-            <label>First name*<input type="text" id="fname" title="First Name" autocomplete="given-name" required /></label>
-            <label>Last name*<input type="text" id="lname" title="Last Name" autocomplete="family-name" required /></label>
-          </fieldset>
-          <fieldset>
-            <legend>Contact Information</legend>
-            <label
-              >Title
-              <input
-                type="text"
-                pattern="[a-zA-Z\s-]*{7,}" 
-                required autocomplete="organization-title"
-            /></label>
-            <label
-              >Email*<input
-                type="email"
-                placeholder="someone@gmail.com"
-                required
-            /></label>
-            <label
-              >Mobile*<input type="tel" id="mobile" name="mobile" required
-            /></label>
-          </fieldset>
+          <form action="thankyou.html" method="get" class="join-form">
+            <fieldset>
+              <legend>Personal Information</legend>
+              <label
+                >First name*<input
+                  type="text"
+                  id="fname"
+                  title="First Name"
+                  autocomplete="given-name"
+                  required
+              /></label>
+              <label
+                >Last name*<input
+                  type="text"
+                  id="lname"
+                  title="Last Name"
+                  autocomplete="family-name"
+                  required
+              /></label>
+            </fieldset>
+            <fieldset>
+              <legend>Contact Information</legend>
+              <label
+                >Title
+                <input
+                  type="text"
+                  pattern="[a-zA-Z\s-]*{7,}"
+                  required
+                  autocomplete="organization-title"
+              /></label>
+              <label
+                >Email*<input
+                  type="email"
+                  placeholder="someone@gmail.com"
+                  required
+              /></label>
+              <label
+                >Mobile*<input type="tel" id="mobile" name="mobile" required
+              /></label>
+            </fieldset>
 
-          <fieldset>
-            <legend>Business details</legend>
-            <label
-              >Business name*<input
-                type="text"
-                id="biz"
-                name="business"
-                required
-            /></label>
-            <label
-              ><input type="radio" name="membership" value="NP-Membership" /> NP
-              Membership
-            </label>
-            <label
-              ><input type="radio" name="membership" value="bronze" /> Bronze
-              Membership
-            </label>
-            <label
-              ><input type="radio" name="membership" value="silver" /> Silver
-              Membership
-            </label>
-            <label
-              ><input type="radio" name="membership" value="gold" /> Gold
-              Membership
-            </label>
-            <label class="description"
-              >Description of Business:
-              <textarea
-                name="description"
-                cols="30"
-                rows="10"
-                id="description"
-              ></textarea>
-            </label>
-            <label
-              >Timestamp:
-              <input
-                type="time"
-                name="timestamp"
-                id="timestamp"
-                step="1"
-                hidden
-            /></label>
-          </fieldset>
+            <fieldset>
+              <legend>Business details</legend>
+              <label
+                >Business name*<input
+                  type="text"
+                  id="biz"
+                  name="business"
+                  required
+              /></label>
+              <label
+                ><input type="radio" name="membership" value="NP-Membership" />
+                NP Membership
+              </label>
+              <label
+                ><input type="radio" name="membership" value="bronze" /> Bronze
+                Membership
+              </label>
+              <label
+                ><input type="radio" name="membership" value="silver" /> Silver
+                Membership
+              </label>
+              <label
+                ><input type="radio" name="membership" value="gold" /> Gold
+                Membership
+              </label>
+              <label class="description"
+                >Description of Business:
+                <textarea
+                  name="description"
+                  cols="30"
+                  rows="10"
+                  id="description"
+                ></textarea>
+              </label>
+              <label
+                >Timestamp:
+                <input
+                  type="time"
+                  name="timestamp"
+                  id="timestamp"
+                  step="1"
+                  hidden
+              /></label>
+            </fieldset>
 
-          <input type="submit" value="Join Us" />
-        </form>
+            <input type="submit" value="Join Us" />
+          </form>
         </div>
         <!-- <form action="thankyou.html" method="get"></form> -->
-         <div class="membership-wrapper">
+        <div class="membership-wrapper">
           <h2>Membership Levels</h2>
-         <div class="card-holder">
-          
-         </div>
-         </div>
+          <div class="card-holder"></div>
+        </div>
       </main>
       <footer>
         <div class="address-box">

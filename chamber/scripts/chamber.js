@@ -174,7 +174,7 @@ function displayCards(data) {
     const phone = document.createElement("p");
     const webURL = document.createElement("a");
 
-    name.innerText = `${member.name}`
+    name.innerText = `${member.name}`;
     image.setAttribute("src", member.imageURL);
     image.setAttribute("alt", member.name);
     address.innerText = `${member.address}`;
@@ -201,3 +201,30 @@ function showList() {
   display.classList.add("list");
   display.classList.remove("grid");
 }
+
+// Join Section
+
+const JoinCardContainer = document.querySelector(".card-holder");
+
+function createMembershipCards() {}
+
+const nonProfit = document.createElement("section");
+nonProfit.innerHTML = `<h3 class="join-card">Non Profit Membership Level</h3>
+                       <button>Learn More</button>
+`;
+
+// nonProfit.appendChild(nonProfitTitle);
+
+const bronze = document.createElement("section");
+const bronzeTitle = document.createElement("h3");
+bronzeTitle.textContent = "Bronze Membership Level";
+
+const silver = document.createElement("section");
+const silverTitle = document.createElement("h3");
+silverTitle.textContent = "Silver Membership Level";
+
+const gold = document.createElement("section");
+const goldTitle = document.createElement("h3");
+goldTitle.textContent = "Gold Membership Level";
+
+JoinCardContainer.appendChild(nonProfit);
