@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="styles/chamber-large.css" />
 
     <script src="scripts/chamber.js" defer></script>
+    <!-- <script src="scripts/join.js" defer></script> -->
   </head>
   <body>
     <div class="container">
@@ -167,7 +168,70 @@
         <!-- <form action="thankyou.html" method="get"></form> -->
         <div class="membership-wrapper">
           <h2>Membership Levels</h2>
-          <div class="card-holder"></div>
+
+          <div class="card-holder">
+            <section class="join-card">
+              <h3>Non Profit Membership Level</h3>
+              <button class="npButton">Learn more</button>
+            </section>
+            <dialog class="npDialog">
+              <button class="closeNP">Close</button>
+              <h3>Non Profit Membership Level</h3>
+              <p>
+                New business owners who have gone through the Chamber's
+                mentorship program and are willing to gain full membership will
+                experience the following benefits:
+              </p>
+              <ul>
+                <li>
+                  Access to partners for investment opportunities across
+                  economic sectors
+                </li>
+                <li>15% Discount on Facility Rentals (Exclusive of tax)</li>
+                <li>10% Discount on Training Courses</li>
+                <li>Display of logos on Chamber website</li>
+                <li>10% Discount at the Port Harcourt Trade Fair</li>
+              </ul>
+            </dialog>
+            <section class="join-card">
+              <h3>Bronze Membership Level</h3>
+              <button class="bronzeButton">Learn more</button>
+            </section>
+            <dialog>
+              <h3>Non Profit Membership Level</h3>
+              <button class="closeBronze">Close</button>
+              
+
+
+
+
+
+              <ul>
+                <li>Access to partners for investment opportunities across economic sectors</li>
+                <li>20% Discount on Facility Rentals (Exclusive of tax)</li>
+                <li>15% Discount on Training Courses</li>
+                <li>Invitation to Roundtable events</li>
+                <li>Display of logos on Chamber website</li>
+                <li>10% Discount at the Port Harcourt Trade Fair</li>
+              </ul>
+
+              
+            </dialog>
+            <section class="join-card">
+              <h3>Silver Membership Level</h3>
+              <button>Learn more</button>
+            </section>
+            <dialog>
+              
+            </dialog>
+            <section class="join-card">
+              <h3>Gold Membership Level</h3>
+              <button>Learn more</button>
+            </section>
+            <dialog>
+
+            </dialog>
+          </div>
         </div>
       </main>
       <footer>
@@ -193,5 +257,46 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      const npDialog = document.querySelector(".npDialog");
+      const bronzeDialog = document.querySelector(".bronzeDialog");
+      const silverDialog = document.querySelector(".silverDialog");
+      const goldDialog = document.querySelector(".goldDialog");
+      const npDisplayButton = document.querySelector(".npButton");
+      const bronzeDisplayButton = document.querySelector(".bronzeButton");
+      const silverDisplayButton = document.querySelector(".silverButton");
+      const goldDisplayButton = document.querySelector(".goldButton");
+      const closeButton = document.querySelector("dialog .close");
+
+      npDisplayButton.addEventListener("click", () => {
+        npDialog.showModal();
+      });
+
+      closeButton.addEventListener("click", () => {
+        npdialog.close();
+      });
+      bronzeButton.addEventListener("click", () => {
+        bronzeDialog.showModal();
+      });
+
+      closeButton.addEventListener("click", () => {
+        npdialog.close();
+      });
+      npDisplayButton.addEventListener("click", () => {
+        npDialog.showModal();
+      });
+
+      closeButton.addEventListener("click", () => {
+        npdialog.close();
+      });
+      npDisplayButton.addEventListener("click", () => {
+        npDialog.showModal();
+      });
+
+      closeButton.addEventListener("click", () => {
+        npdialog.close();
+      });
+    </script>
   </body>
 </html>

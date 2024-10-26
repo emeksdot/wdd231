@@ -204,27 +204,16 @@ function showList() {
 
 // Join Section
 
-const JoinCardContainer = document.querySelector(".card-holder");
 
-function createMembershipCards() {}
+const dialog = document.querySelector("dialog");
+const displayButton = document.querySelector("npButton");
+const closeButton = document.querySelector("dialog button");
 
-const nonProfit = document.createElement("section");
-nonProfit.innerHTML = `<h3 class="join-card">Non Profit Membership Level</h3>
-                       <button>Learn More</button>
-`;
+displayButton.addEventListener("click", () => { 
+    dialog.showModal();
+ })
 
-// nonProfit.appendChild(nonProfitTitle);
+displayButton.addEventListener("click", () => { 
+    dialog.close();
+ })
 
-const bronze = document.createElement("section");
-const bronzeTitle = document.createElement("h3");
-bronzeTitle.textContent = "Bronze Membership Level";
-
-const silver = document.createElement("section");
-const silverTitle = document.createElement("h3");
-silverTitle.textContent = "Silver Membership Level";
-
-const gold = document.createElement("section");
-const goldTitle = document.createElement("h3");
-goldTitle.textContent = "Gold Membership Level";
-
-JoinCardContainer.appendChild(nonProfit);
