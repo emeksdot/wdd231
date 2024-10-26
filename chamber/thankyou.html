@@ -76,6 +76,7 @@
       </header>
       <main>
         <h1>Thank you for your request</h1>
+        <section class="form-container"></section>
         
       </main>
       <footer>
@@ -101,5 +102,14 @@
         </div>
       </footer>
     </div>
+    <script>
+        const currentURL = window.location.href;
+        console.log(currentURL);
+        const urlArray = currentURL.split("?");
+        let formData = urlArray[1];
+        console.log(formData);
+        let parts = formData.split("&");
+        console.log(parts)
+    </script>
   </body>
 </html>

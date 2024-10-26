@@ -204,16 +204,9 @@ function showList() {
 
 // Join Section
 
+const joinForm = document.getElementsByClassName("join-form");
+const timestamp = joinForm.getElementsByName("timestamp");
+timestamp.value = +new Date();
 
-const dialog = document.querySelector("dialog");
-const displayButton = document.querySelector("npButton");
-const closeButton = document.querySelector("dialog button");
-
-displayButton.addEventListener("click", () => { 
-    dialog.showModal();
- })
-
-displayButton.addEventListener("click", () => { 
-    dialog.close();
- })
-
+const currenturl = window.location.href;
+console.log(currenturl);
