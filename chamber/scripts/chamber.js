@@ -213,8 +213,11 @@ console.log(currenturl);
 
 
 // Discover Section
+
 const visitsDisplay = document.querySelector(".visits");
-let numVisits = Number(localStorage.getItem("numVisits-ls")) || 0;
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+localStorage.setItem("numVisits-ls", numVisits);
 
 if (numVisits !== 0) {
 	visitsDisplay.textContent = numVisits;
@@ -224,4 +227,4 @@ if (numVisits !== 0) {
 
 numVisits++;
 
-localStorage.setItem("numVisits-ls", numVisits);
+

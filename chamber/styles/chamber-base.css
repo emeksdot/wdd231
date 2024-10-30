@@ -348,24 +348,40 @@ dialog::backdrop{
   grid-template-columns: 1fr;
   grid-gap: 1rem;
   margin: 0 auto;
+  background-color: var(--secondary-color-light);
+  padding: 1rem;
+
 
 
 }
 
 .discover-right{
-  border: 1px solid red;
+  border: 1px solid var(--accent2-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
-  padding: .5rem;
+  padding: 1rem;
+  background-color: var(--navlinks-bg-color);
 
 }
 
-.main-area img{
+.discover-right img{
   width: 100%;
   height: auto;
-  border: 1px solid red;
+  border: 2px solid var(--accent1-color);
+  padding: 1px;
+  animation: fade 15s;
+}
+
+@keyframes fade {
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+  
 }
 
 .discover-left{
