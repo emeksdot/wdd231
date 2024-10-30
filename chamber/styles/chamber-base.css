@@ -342,3 +342,41 @@ dialog::backdrop{
 }
 
 /* Discover Page Styles */
+
+.discover-main{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  margin: 0 auto;
+
+
+}
+
+.discover-right{
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: .5rem;
+
+}
+
+.main-area img{
+  width: 100%;
+  height: auto;
+  border: 1px solid red;
+}
+
+.discover-left{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0.5rem;
+  
+}
+.discover-left  .second,.first{
+  border: 2px solid blue;
+    padding: 0.5rem;
+
+}

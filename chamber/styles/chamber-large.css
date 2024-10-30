@@ -53,6 +53,25 @@
     margin-right: 1rem;
   }
 
+  /* For the Discover Page */
+  .discover-main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  
+  }
+  
+  .main-area{
+    grid-column: 2 / 3;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: .5rem;
+  
+  }
+
 
     
 }

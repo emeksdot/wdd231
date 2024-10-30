@@ -75,8 +75,93 @@
         <h1 class="discover-heading">Welcome to the Discover Page</h1>
       </header>
       <main class="discover-main">
-        <section class="discover-left"></section>
-        <section class="discover-right"></section>
+        <section class="discover-left">
+          <div class="demographics">
+            <h2>Demographics</h2>
+            
+            <p>Port Harcourt  is the capital and largest city of Rivers State in Nigeria. It is the fifth most populous city in Nigeria after Lagos, Kano, Ibadan and Benin. The area that became Port Harcourt in 1912 was before that a farmland of the people of Rebisi (Ikwerre). The colonial administration of Nigeria created the port to export coal from the collieries of Enugu located 243 kilometres (151 mi) north of Port Harcourt, to which it was linked by a railway called the Eastern Line, also built by the British.</p>
+          </div>
+          <div class="statistical-data">
+            <h2>Statistical Data</h2>
+            <ul>
+              <li>In 1950, the population of Port Harcourt was 59,752. Port Harcourt has grown by 150,844 since 2015, which represents a 4.99% annual change</li>
+              <li>As of 2023, Port Harcourt's urban population is approximately 3,480,000</li>
+              <li>From an area of 15.54 km2 (6.00 sq mi) in 1914, Port Harcourt grew uncontrolled to an area of 360 km2 (140 sq mi) in the 1980s.
+
+              </li>
+              <li>After the discovery of crude oil in Oloibiri in 1956, Port Harcourt exported the first shipload from Nigeria in 1958</li>
+              <li>The Greater Port Harcourt region, spans eight local government areas that include Port Harcourt, Okrika, Obio-Akpor, Ikwerre, Oyigbo, Ogu–Bolo, Etche and Eleme. Its total population was estimated at 2,000,000 as of 2009, making it one of the largest metropolitan areas in Nigeria. </li>
+              <li>Port Harcourt's heaviest precipitation occurs during September with an average of 367 millimetres or 14.45 inches of rain. December on average is the driest month of the year, with an average rainfall of 20 millimetres or 0.79 inches.</li>
+            </ul>
+            
+          </div>
+          <div class="discover-events">
+
+          </div>
+          <div class="discover-calendar">
+            
+          </div>
+          <div class="discover-visit">
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+          </div>
+        </section>
+        <section class="discover-right">
+          <picture>
+            <source media="(max-width: 400px)" srcset="images/banana-small.webp ">
+            <source media="(max-width: 600px)" srcset="images/banana-medium.webp ">
+            <figure>
+                <img loading="lazy" src="images/banana-large.webp" alt="A woman carrying banana"
+                    width="350" height="350">
+                <figcaption>A woman hawking a bunch of banana.</figcaption>
+                </figure>
+        </picture>
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/hotel-small.webp ">
+          <source media="(max-width: 600px)" srcset="images/hotel-medium.webp ">
+          <figure>
+              <img loading="lazy" src="images/hotel-large.webp" alt="The Bougainvillea Hotel"
+                  width="350" height="350">
+              <figcaption>The Bougainvillea Hotel.</figcaption>
+              </figure>
+      </picture>
+      <picture>
+        <source media="(max-width: 400px)" srcset="images/vehicles-small.webp ">
+        <source media="(max-width: 600px)" srcset="images/vehicles-medium.webp ">
+        <figure>
+            <img loading="lazy" src="images/vehicles-large.webp" alt="The popular Ikwerre Road"
+                width="350" height="350">
+            <figcaption>The popular Ikwerre Road.</figcaption>
+            </figure>
+    </picture>
+    <picture>
+      <source media="(max-width: 400px)" srcset="images/kayak-small.webp ">
+      <source media="(max-width: 600px)" srcset="images/kayak-medium.webp ">
+      <figure>
+          <img loading="lazy" src="images/kayak-large.webp" alt="Kayaking at The Pleasure Park Aba Road"
+              width="350" height="350">
+          <figcaption>Kayaking at The Pleasure Park Aba Road.</figcaption>
+          </figure>
+  </picture>
+<picture>
+  <source media="(max-width: 400px)" srcset="images/food-vendor-small.webp ">
+  <source media="(max-width: 600px)" srcset="images/food-vendor-medium.webp ">
+  <figure>
+      <img loading="lazy" src="images/food-vendor-large.webp" alt="A food vendor on the streets"
+          width="350" height="350">
+      <figcaption>A street food vendor on the go.</figcaption>
+      </figure>
+</picture>
+<picture>
+  <source media="(max-width: 400px)" srcset="images/masquerade-small.webp ">
+  <source media="(max-width: 600px)" srcset="images/masquerade-medium.webp ">
+  <figure>
+      <img loading="lazy" src="images/masquerade-large.webp" alt="Cultural Masquerade Display"
+          width="350" height="350">
+      <figcaption>Cultural Masquerade Display.</figcaption>
+      </figure>
+</picture>
+          
+          </section>
         
       </main>
       <footer>
@@ -103,45 +188,5 @@
       </footer>
     </div>
 
-    <script>
-      const npDialog = document.querySelector(".npDialog");
-      const bronzeDialog = document.querySelector(".bronzeDialog");
-      const silverDialog = document.querySelector(".silverDialog");
-      const goldDialog = document.querySelector(".goldDialog");
-      const npDisplayButton = document.querySelector(".npButton");
-      const bronzeDisplayButton = document.querySelector(".bronzeButton");
-      const silverDisplayButton = document.querySelector(".silverButton");
-      const goldDisplayButton = document.querySelector(".goldButton");
-      const closeButton = document.querySelector("dialog .close");
-
-      npDisplayButton.addEventListener("click", () => {
-        npDialog.showModal();
-      });
-
-      closeButton.addEventListener("click", () => {
-        npdialog.close();
-      });
-      bronzeButton.addEventListener("click", () => {
-        bronzeDialog.showModal();
-      });
-
-      closeButton.addEventListener("click", () => {
-        npdialog.close();
-      });
-      npDisplayButton.addEventListener("click", () => {
-        npDialog.showModal();
-      });
-
-      closeButton.addEventListener("click", () => {
-        npdialog.close();
-      });
-      npDisplayButton.addEventListener("click", () => {
-        npDialog.showModal();
-      });
-
-      closeButton.addEventListener("click", () => {
-        npdialog.close();
-      });
-    </script>
   </body>
 </html>
