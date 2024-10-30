@@ -72,6 +72,28 @@
   
   }
 
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .media-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .media-box img {
+    width: 1.5rem;
+    height: auto;
+  }
+  
+  .normalText {
+    font-weight: normal;
+  
+
 
     
 }

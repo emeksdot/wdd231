@@ -67,7 +67,6 @@ nav ul li {
   margin-bottom: 0.125rem;
   font-family: var(--paragraph-font);
   font-weight: 700;
-  /* width: 100%; */
 }
 
 nav ul li a {
@@ -395,4 +394,21 @@ dialog::backdrop{
   border: 2px solid blue;
     padding: 0.5rem;
 
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: var(--secondary-color-light);
+}
+
+.media-box{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,3 +1,22 @@
+:root {
+  --primary-color-dark: rgb(1, 22, 39);
+  --primary-color-light: rgb(182, 211, 138);
+  --secondary-color-dark: rgb(214, 121, 118);
+  --secondary-color-light: rgb(238, 203, 202);
+  --accent1-color: rgb(6, 65, 82);
+  --accent2-color: rgb(80, 139, 70);
+
+  --heading-font: "Rubik", serif;
+  --paragraph-font: "Montserrat", sans-serif;
+
+  --navlinks-bg-color: rgb(214, 121, 118);
+  --navlinks-font-color: rgb(1, 22, 39);
+  --navlinks-hover-bg-color: rgb(1, 22, 39);
+  --navlinks-hover-font-color: rgb(214, 121, 118);
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -28,13 +47,15 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: aquamarine;
+  background-color: var(--secondary-color-light);
   position: relative;
   height: 3.75rem;
 }
 nav ul {
   display: flex;
   gap: 30px;
+  background-color: var(--secondary-color-light);
+
 }
 
 nav ul li {
@@ -44,21 +65,28 @@ nav ul li a {
   text-decoration: none;
   padding: 0.5rem;
   font-size: 1.2rem;
-  color: rgb(6, 65, 82);
+  color: var(--navlinks-font-color);
+  background-color: var(--navlinks-bg-color);
+  border-radius: 6px;
+  display: block;
+  border: 2px solid var(--navlinks-font-color);
 }
 
 .active {
-  background-color: white;
+  background-color: var(--accent1-color);
+  color: var(--primary-color-light);
+  background-color: var(--navlinks-hover-bg-color);
   border: 1px solid green;
   padding: 0.5rem;
 }
 nav ul li a:hover {
-  color: white;
 
-  background-color: rgba(6, 65, 82, 0.6);
   padding: 0.5rem;
   border: 6px;
   transition: all 0.25s ease;
+
+  color: var(--navlinks-hover-font-color);
+  background-color: var(--navlinks-hover-bg-color);
 }
 
 .menu-icon {

@@ -209,22 +209,10 @@ const timestamp = joinForm.getElementsByName("timestamp");
 timestamp.value = +new Date();
 
 const currenturl = window.location.href;
-console.log(currenturl);
 
 
 // Discover Section
 
-const visitsDisplay = document.querySelector(".visits");
 
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-localStorage.setItem("numVisits-ls", numVisits);
-
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
-} else {
-	visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
-}
-
-numVisits++;
 
 
