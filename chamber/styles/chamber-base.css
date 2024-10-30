@@ -357,6 +357,7 @@ dialog::backdrop{
 
 .discover-right{
   border: 1px solid var(--accent2-color);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
