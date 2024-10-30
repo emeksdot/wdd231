@@ -37,6 +37,7 @@ header {
   display: grid;
   grid-template-columns: 1fr;
 }
+header h1{text-align: center;}
 
 nav {
   padding: 10px 30px;
@@ -394,6 +395,12 @@ dialog::backdrop{
   border: 2px solid blue;
     padding: 0.5rem;
 
+}
+
+.demographics, .statistical-data, .discover-events, .discover-calendar{
+  border: 1px solid var(--primary-color-dark);
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 footer {
