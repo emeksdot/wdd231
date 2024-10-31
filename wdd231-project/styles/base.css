@@ -1,0 +1,17 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(23, 34, 54);
+    /* background-image: radial-gradient(650px circle at 0% 0%,
+            hsl(219, 41%, 35%),
+            hsl(218, 41%, 30%),
+            hsl(219, 41%, 20%),
+            hsl(218, 41%, 19%),
+            transparent 100%); */
+}
