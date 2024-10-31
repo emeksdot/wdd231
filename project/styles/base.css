@@ -1,4 +1,22 @@
-
+:root {
+    --heading-font-color: #00241B;
+    --dark-font-color: #172236;
+    --light-font-color: #ffffff;
+    --heading-font: "Ubuntu",
+        sans-serif;
+    --logo-font: "Kalnia Glaze", serif;
+    --paragraph-font: "Rubik", sans-serif;
+    --paragraph-font-color: #172236;
+    --primary-color-dark:#172236 ;
+    --primary-color-light: #374B4A;
+    --sec-color-dark:#88D9E6;
+    --sec-color-light:#C5FFFD ;
+    --cta-bgcolor: #FF2400;
+    --accent1-color: #8B8BAE;
+    --accent2-color: #66FF77;
+    --webpage-bgcolor: #FFCCD5;
+    --links-bgcolor: #93E5AB;
+}
 
 *{
     padding: 0;
@@ -14,4 +32,63 @@ body {
             hsl(219, 41%, 20%),
             hsl(218, 41%, 19%),
             transparent 100%); */
+}
+
+.container{
+    min-height: 100vh;
+    /* background-image: url(images/banner.webp); */
+    background-image: url(images/banner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+nav{
+    background-color: #fff;
+    box-shadow: 3px 3px 5px ;
+    position: relative;
+}
+
+nav ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover{
+    background-color: #f0f0f0;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: yellow;
+    box-shadow: -10px 0 10px red;
 }
