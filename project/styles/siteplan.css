@@ -1,0 +1,135 @@
+:root {
+    --heading-font-color: #00241B;
+    --dark-font-color: #172236;
+    --light-font-color: #ffffff;
+    --heading-font: "Ubuntu",
+        sans-serif;
+    --logo-font: "Kalnia Glaze", serif;
+    --paragraph-font: "Rubik", sans-serif;
+    --paragraph-font-color: #172236;
+    --primary-color-dark:#172236 ;
+    --primary-color-light: #374B4A;
+    --sec-color-dark:#88D9E6;
+    --sec-color-light:#C5FFFD ;
+    --cta-bgcolor: #FF2400;
+    --accent1-color: #8B8BAE;
+    --accent2-color: #66FF77;
+    --webpage-bgcolor: #FFCCD5;
+    --links-bgcolor: #93E5AB;
+}
+
+header,
+main,
+footer {
+    max-width: 60rem;
+    background-color: var(--primary-color-light);
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+header,
+h1, footer {
+    font-family: var(--heading-font);
+    text-align: center;
+    color: var(--light-font-color);
+}
+
+h1, h2 {
+    font-weight: 400;
+    text-decoration-line: underline;
+    font-family: var(--heading-font);
+}
+
+
+
+p{
+    font-family: var(--paragraph-font);
+}
+
+nav{
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    background-color: var(--accent2-color);
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin: 30px auto;
+}
+
+.logo {
+    font-family: var(--logo-font);
+    font-size: 2.5rem;
+    width: 100px;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-left: .5rem;
+    background-color: var(--accent2-color);
+     border: none;
+}
+
+nav ul li:first-of-type a{
+color: var(--light-font-color);
+background-color: var(--cta-bgcolor);
+}
+
+
+ 
+  ul li a:hover {
+    cursor: pointer;
+    border-bottom: solid 3px #2DD4BF;
+  }
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+nav a {
+    color: var(--dark-font-color);
+    font-weight: 600;
+    font-family: var(--paragraph-font);
+    background-color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 2px solid var(--accent1-color);
+}
+
+
+
+
+
+
+main {
+    background-color: var(--sec-color-light);
+}
+
+img {
+    display: block;
+    margin: .5rem auto;
+    border: 2px solid black;
+    margin-bottom: 1rem;
+    padding: .25rem;
+}
+
+footer {
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+
+  
+
+  
+ 
