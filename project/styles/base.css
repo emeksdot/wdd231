@@ -149,3 +149,8 @@ aside{
 h1{
     text-align: center;
 }
+
+/* Footer */
+footer{
+    padding: 1rem;
+}

@@ -1,13 +1,267 @@
 {
     "products": [
-    {
-      "name": "Berger Paints",
-      "brand": "70, Ordinance Road, Trans-Amadi Industrial Layout, Port Harcourt",
-      "price": "+2348102164862",
-      "description": "https://www.bergerpaintsnig.com/",
-      "imageURL": "https://www.finelib.com/images/listings/tn/69087_company_logo.JPG",
-      "membershipLevel": "gold",
-      "extraINFO": ""
-    },
-]
+        {
+            "id": "1a",
+            "name": "Puma Axelion",
+            "brand": "PUMA",
+            "price": 78.60,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Puma Axelion1a.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "1b",
+            "name": "Puma Axelion",
+            "brand": "PUMA",
+            "price": 78.60,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Puma Axelion1b.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "1c",
+            "name": "Puma Axelion",
+            "brand": "PUMA",
+            "price": 78.60,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Puma Axelion1c.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "1d",
+            "name": "Puma Axelion",
+            "brand": "PUMA",
+            "price": 78.60,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Puma Axelion1d.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "2a",
+            "name": "Puma Court Ultra",
+            "brand": "PUMA",
+            "price": 74.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Puma Court Ultra2a.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "2b",
+            "name": "Puma Court Ultra",
+            "brand": "PUMA",
+            "price": 74.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Puma Court Ultra2b.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "2c",
+            "name": "Puma Court Ultra",
+            "brand": "PUMA",
+            "price": 74.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Puma Court Ultra2c.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "2d",
+            "name": "Puma Court Ultra",
+            "brand": "PUMA",
+            "price": 74.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Puma Court Ultra2d.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "3a",
+            "name": "Aldo Croc",
+            "brand": "ALDO",
+            "price": 69.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Aldo Croc3a.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "3b",
+            "name": "Aldo Croc",
+            "brand": "ALDO",
+            "price": 69.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Aldo Croc3b.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "3c",
+            "name": "Aldo Croc",
+            "brand": "ALDO",
+            "price": 69.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Aldo Croc3c.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "3d",
+            "name": "Aldo Croc",
+            "brand": "ALDO",
+            "price": 69.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Aldo Croc3d.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "4a",
+            "name": "Air Jordan Stadium",
+            "brand": "AIR JORDAN",
+            "price": 82.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Air Jordan Stadium4a.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "4b",
+            "name": "Air Jordan Stadium",
+            "brand": "AIR JORDAN",
+            "price": 82.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Air Jordan Stadium4b.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "4c",
+            "name": "Air Jordan Stadium",
+            "brand": "AIR JORDAN",
+            "price": 82.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Air Jordan Stadium4c.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "4d",
+            "name": "Air Jordan Stadium",
+            "brand": "AIR JORDAN",
+            "price": 82.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Air Jordan Stadium4d.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "5a",
+            "name": "Nike Kyrie 3 EP",
+            "brand": "NIKE",
+            "price": 82.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Nike Kyrie 3 EP5a.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "5b",
+            "name": "Nike Kyrie 3 EP",
+            "brand": "NIKE",
+            "price": 82.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Nike Kyrie 3 EP5b.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "5c",
+            "name": "Nike Kyrie 3 EP",
+            "brand": "NIKE",
+            "price": 82.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Nike Kyrie 3 EP5c.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "5d",
+            "name": "Nike Kyrie 3 EP",
+            "brand": "NIKE",
+            "price": 82.25,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Nike Kyrie 3 EP5d.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "6a",
+            "name": "Nike Epic React 3 EP",
+            "brand": "NIKE",
+            "price": 85.45,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Nike Epic React6a.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "6b",
+            "name": "Nike Epic React 3 EP",
+            "brand": "NIKE",
+            "price": 85.45,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Nike Epic React6b.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "6c",
+            "name": "Nike Epic React 3 EP",
+            "brand": "NIKE",
+            "price": 85.45,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Nike Epic React6c.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "6d",
+            "name": "Nike Epic React 3 EP",
+            "brand": "NIKE",
+            "price": 85.45,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Nike Epic React6d.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "7a",
+            "name": "Reebok Classics",
+            "brand": "REEBOK",
+            "price": 65.95,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Reebok Classics7a.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "7b",
+            "name": "Reebok Classics",
+            "brand": "REEBOK",
+            "price": 65.95,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Reebok Classics7b.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "7c",
+            "name": "Reebok Classics",
+            "brand": "REEBOK",
+            "price": 65.95,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Reebok Classics7c.webp",
+            "rating": "gold"
+        },
+        {
+            "id": "7d",
+            "name": "Reebok Classics",
+            "brand": "REEBOK",
+            "price": 65.95,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?",
+            "imageURL": "images/Reebok Classics7d.webp",
+            "rating": "gold"
+        },
+        
+    ]
 }
+
+<img src= alt="">
+
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos inventore excepturi atque?
+
+
+<img src= alt="">
+<img src="images/Reebok Classics7b.webp" alt="">
+<img src="images/Reebok Classics7c.webp" alt="">
+<img src="images/Reebok Classics7d.webp" alt="">
