@@ -21,8 +21,8 @@ const products = [
 const card = document.createElement('section');
 
 
-const url =
-  "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
+
+  const dataLink = "https://emeksdot.github.io/wdd231/chamber/data/members.json";
 
 const cards = document.querySelector("#cards");
 
