@@ -13,6 +13,12 @@ modified.innerHTML = lastModif;
 
 const card = document.createElement('section');
 
+// const newLink = "https://github.com/emeksdot/wdd231/blob/main/project/data/products.json";
+const newLink =" https://github.com/emeksdot/wdd231/blob/c32a3a51b00f9a910058adb0d6274e71b4d1224d/project/data/products.json";
+
+
+https://raw.githubusercontent.com/emeksdot/wdd231/refs/heads/main/project/data/products.json
+
 
 
 const dataLink = "https://emeksdot.github.io/wdd231/project/data/products.json";
@@ -20,7 +26,7 @@ const dataLink = "https://emeksdot.github.io/wdd231/project/data/products.json";
 const cardContainer = document.querySelector(".cardList");
 
 async function getProductData() {
-  const response = await fetch(dataLink);
+  const response = await fetch(newLink);
   const data = await response.json();
     console.log(data.products);
   displayProducts(data.products);
