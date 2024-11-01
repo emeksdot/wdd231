@@ -31,7 +31,23 @@
 
     aside{
         grid-column: 1 / 2;
-        background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--accent2-color);
+    }
+    aside a, aside li{
+        color: var(--accent2-color);
+        font-size: 1.5rem;
+        list-style-type: none;
+        text-decoration: none;
+        margin-bottom: 0.75rem;
+    }
+
+    aside a{
+        display: flex;
+        gap: 1rem;
     }
 
     .hero{

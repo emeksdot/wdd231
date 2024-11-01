@@ -139,8 +139,7 @@ main{
     padding: 1rem;
 }
 aside{
-    background-color: yellow;
-    /* display: none; */
+    display: none;
 }
 
 .hero{
