@@ -13,12 +13,6 @@ modified.innerHTML = lastModif;
 
 const card = document.createElement('section');
 
-// const newLink = "https://github.com/emeksdot/wdd231/blob/main/project/data/products.json";
-const newLink =" https://github.com/emeksdot/wdd231/blob/c32a3a51b00f9a910058adb0d6274e71b4d1224d/project/data/products.json";
-
-
-https://raw.githubusercontent.com/emeksdot/wdd231/refs/heads/main/project/data/products.json
-
 
 
 const dataLink = "https://emeksdot.github.io/wdd231/project/data/products.json";
@@ -26,29 +20,40 @@ const dataLink = "https://emeksdot.github.io/wdd231/project/data/products.json";
 const cardContainer = document.querySelector(".cardList");
 
 async function getProductData() {
-  const response = await fetch(newLink);
+  const response = await fetch(dataLink);
   const data = await response.json();
     console.log(data.products);
   displayProducts(data.products);
 }
 
-
-
-
-
-
 const displayProducts = (prodArray) => {
-    prodArray.forEach((value, key) => {
-        let newCard = document.createElement("section");
-        // newPiece.classList.add("item");
-        newPiece.innerHTML = `
-            <img src="${value.images}">
-            <p class="title">${value.name}</p>
-            <p class="price">${value.price.toLocaleString()}</p>
-            <button onclick="addToCart(${key})">Add To Cart</button>    
-        `;
-        shoppingList.appendChild(newPiece);
-      });
+    prodArray.forEach((prophet) => {
+    const section = document.createElement("section");
+    const fullName = document.createElement("h2");
+    const portrait = document.createElement("img");
+    const dateOfBirth = document.createElement("p");
+    const placeOfBirth = document.createElement("p");
+    fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+    dateOfBirth.textContent = `Date of Birth: ${prophet.birthdate}`;
+    placeOfBirth.textContent = ` Place of Birth: ${prophet.birthplace}`;
+    portrait.setAttribute("src", prophet.imageurl);
+    portrait.setAttribute(
+      "alt",
+      `Portrait of ${prophet.name} ${prophet.lastname}`
+    );
+    portrait.setAttribute("loading", `lazy`);
+    portrait.setAttribute("width", `321px`);
+    portrait.setAttribute("height", `397px`);
+
+    section.appendChild(fullName);
+    section.appendChild(dateOfBirth);
+    section.appendChild(placeOfBirth);
+    section.appendChild(portrait);
+
+    cards.appendChild(section);
+
+    // portrait.alt = `${prophet.}`
+  });
 };
 
 getProductData();
