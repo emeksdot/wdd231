@@ -1,4 +1,8 @@
 @media screen and (min-width: 640px) {
+
+    nav{
+        height: 80px;
+    }
     nav ul{
         width: 100%;
         list-style-type: none;
@@ -6,6 +10,37 @@
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
+    }
+
+    nav ul li{
+        display: inline-block;
+        line-height: 30px;
+    }
+
+    .sidebar{
+        display: none;
+
+    }
+
+    /* The Main Section */
+    main{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.25rem;
+    }
+
+    aside{
+        grid-column: 1 / 2;
+        background-color: red;
+    }
+
+    .hero{
+        grid-column: 2 / 5;
+        background-color: rebeccapurple;
+    }
+
+    footer{
+        background-color: aqua;
     }
 
     

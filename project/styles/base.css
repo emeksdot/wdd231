@@ -36,19 +36,23 @@ body {
 
 .container{
     min-height: 100vh;
-    /* background-image: url(images/banner.webp); */
-    background-image: url(images/banner.webp);
+    background-image: url("images/banner.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
 }
 
 nav{
-    background-color: #fff;
-    box-shadow: 3px 3px 5px ;
+    background-color: var(--accent2-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 5px var(--cta-bgcolor);
     position: relative;
 }
 
@@ -63,24 +67,57 @@ nav ul{
 
 nav li{
     height: 50px;
+    display: block;
 }
 
 nav a{
-    height: 100%;
-    padding: 0 30px;
-    text-decoration: none;
-    color: black;
     display: flex;
     align-items: center;
+    margin-right: 2rem;
+    color: var(--dark-font-color);
+    font-weight: 600;
+    font-family: var(--paragraph-font);
+    background-color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 2px solid var(--accent1-color);
+    
 }
 
 nav a:hover{
-    background-color: #f0f0f0;
+    background-color: var(--dark-font-color);
+    color: #fff;
 }
 
 nav li:first-child{
     margin-right: auto;
 }
+
+.logo {
+    font-family: var(--logo-font);
+    font-size: 2rem;
+    width: 100px;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-left: .5rem;
+    background-color: var(--accent2-color);
+    border: none;
+}
+
+.logo:hover{
+    background-color: var(--accent2-color);
+    cursor: pointer;
+}
+
+ a.active{
+     color: var(--light-font-color);
+     background-color: var(--cta-bgcolor);
+    }
+    a.active:hover{
+        color:var(--cta-bgcolor) ;
+        background-color:var(--light-font-color) ;
+    }
 
 .sidebar{
     position: fixed;
@@ -89,6 +126,26 @@ nav li:first-child{
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.279);
+    backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px red;
+    display: none;
+}
+
+/* Main Section */
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+aside{
+    background-color: yellow;
+    /* display: none; */
+}
+
+.hero{
+    background-color: rebeccapurple;
+}
+h1{
+    text-align: center;
 }
