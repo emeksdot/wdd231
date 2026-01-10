@@ -1,0 +1,8 @@
+const navButton = document.querySelector("#ham-btn"); // do this first
+const navLinks = document.querySelector("#nav-bar");
+
+// Toggle the show class off and on
+navButton.addEventListener("click", () => {
+  navButton.classList.toggle("show"); // Done first
+  navLinks.classList.toggle("show");
+});

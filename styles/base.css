@@ -34,6 +34,7 @@ header span {
   font-size: 1.2rem;
   color: #311900;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 5px;
 }
 
 /* ***************************** NAVIGATION **************************************** */
@@ -43,11 +44,21 @@ header span {
   border: none;
   color: #7b3f00;
   cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .hamburger::after{
   content: "\2630";
   font-size: 2rem;
 }
+
+.hamburger.show::after {
+  content: "\00d7";
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ************************************** */
+
 
 
 #nav-bar
