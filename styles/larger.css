@@ -1,0 +1,16 @@
+@media screen and (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+    border-bottom: 1px solid green;
+  }
+  .navigation ul {
+    display: flex;
+  }
+  .navigation ul li a {
+    border: none;
+  }
+}

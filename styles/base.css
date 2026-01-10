@@ -16,6 +16,9 @@
   grid-template-rows: auto auto 1fr auto;
 }
 
+/* ***************************** HEADER  **************************************** */
+
+
 header {
   display: grid;
   grid-template-columns: 1.5rem auto 3rem;
@@ -59,6 +62,34 @@ header span {
 
 /* ************************************** */
 
+.navigation{
+  display: none;
+}
+.navigation.show{
+  display: block;
+}
 
+.navigation ul{
+  list-style: none;
+  display: block;
+}
+.navigation ul li{
+  
+}
+.navigation ul li a{
+  text-decoration: none;
+  display: block;
+  color: #7b3f00;
+  padding: 0.9rem 0.625rem;
+  border-bottom: 1px solid #311900;
+}
+.navigation ul li a:hover{
+  background-color: #311900;
+  color: #ffffbb;
+}
+
+.navigation ul li.current{
+  background-color: rgba(255, 0, 0, 0.3);
+}
 
 #nav-bar
