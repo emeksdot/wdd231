@@ -18,7 +18,6 @@
 
 /* ***************************** HEADER  **************************************** */
 
-
 header {
   display: grid;
   grid-template-columns: 1.5rem auto 3rem;
@@ -42,14 +41,14 @@ header span {
 
 /* ***************************** NAVIGATION **************************************** */
 
-.hamburger{
+.hamburger {
   background-color: none;
   border: none;
   color: #7b3f00;
   cursor: pointer;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.hamburger::after{
+.hamburger::after {
   content: "\2630";
   font-size: 2rem;
 }
@@ -62,34 +61,60 @@ header span {
 
 /* ************************************** */
 
-.navigation{
+.navigation {
   display: none;
 }
-.navigation.show{
+.navigation.show {
   display: block;
 }
 
-.navigation ul{
+.navigation ul {
   list-style: none;
   display: block;
 }
-.navigation ul li{
-  
+.navigation ul li {
 }
-.navigation ul li a{
+.navigation ul li a {
   text-decoration: none;
   display: block;
   color: #7b3f00;
   padding: 0.9rem 0.625rem;
   border-bottom: 1px solid #311900;
 }
-.navigation ul li a:hover{
+.navigation ul li a:hover {
   background-color: #311900;
   color: #ffffbb;
 }
 
-.navigation ul li.current{
+.navigation ul li.current {
   background-color: rgba(255, 0, 0, 0.3);
 }
 
-#nav-bar
+footer {
+  background-color: #ffffbb;
+  padding: 1rem 10px;
+  text-align: center;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #311900;
+  border-radius: 50%;
+}
+.social a:hover {
+  color: #ffffbb;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.social a img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
