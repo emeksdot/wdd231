@@ -4,11 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dummy Page</title>
+    <title> Emeka Thomas Onwugbonu - WDD 231 - Web Frontend Development I</title>
+    <meta name="description" content=" Chamber of Commerce Project">
+    <meta name="author" content="Emeka Thomas Onwugbonu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/navigation" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/filter.js" defer></script>
 
 </head>
 
@@ -16,7 +24,7 @@
 
     <div class="container">
         <header>
-            <img src="images/house.svg" alt="logo" width="512" height="512" />
+            <img src="images/house.svg" alt="logo" width="512" height="512">
             <span>Emeka Thomas Onwugbonu</span>
             <button id="ham-btn" class="hamburger"></button>
         </header>
@@ -28,20 +36,46 @@
             </ul>
         </nav>
         <main>
-            <img src="images/emeka_231.webp" alt="" width="600" height="600">
+            <h1>Home</h1>
+            <section>
+                <h2>About Me</h2>
+                <p>I was born and raised in Port Harcourt, the capital of Rivers state in the southern part of Nigeria.
+                    Among its popular nicknames are, "Pitakwa", and "The Garden City"</p>
+                <p>People are drawn to it from all over the world because of its metropolitan outlook and it is also a
+                    major hub of the Petroleum exploration activities in the country.</p>
+                <p>I am married with 3 children and have been a member of the Church of Jesus Christ of Latter-Day
+                    Saints for about 3 decades now.</p>
+                <p>I am currently enrolled in the Web & Computer Programming program of BYU Idaho after completing the
+                    PathwayConnect Program.</p>
+            </section>
+            <section>
+                <h2>Student Photo</h2>
+                <img src="images/emeka-Passport-j.jpg" alt="Emeka Thomas picture" width="600" height="600">
+            </section>
+            <section class="courses">
+                <h2>Web Certificate Courses</h2>
+                <a href="#" class="btns all">ALL</a>
+                <a href="#" class="btns cse">CSE</a>
+                <a href="#" class="btns wdd">WDD</a>
+            </section>
+
+            <div class="list">
+
+            </div>
+            <!-- </section> -->
         </main>
+        <p class="credits-box">Total number of credits: <span class="credits">12</span></p>
+
         <footer>
             <div class="social">
-                <a href="https://www.linkedin.com/in/emeksdot/" target="_blank" width="16" height="16"><img
-                        src="images/linkedin.svg" alt=""></a>
-                <a href="https://github.com/emeksdot" target="_blank" width="16" height="16"><img
-                        src="images/github.svg" alt=""></a>
-                <a href="https://x.com/emeksdot" target="_blank" width="16" height="16"><img src="images/twitter-x.svg"
-                        alt=""></a>
-                <a href="https://www.facebook.com/profile.php?id=1471673701" target="_blank" width="16" height="16"><img
-                        src="images/facebook.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/emeksdot/" target="_blank"><img src="images/linkedin.svg"
+                        alt="linkedin"></a>
+                <a href="https://github.com/emeksdot" target="_blank"><img src="images/github.svg" alt="github"></a>
+                <a href="https://x.com/emeksdot" target="_blank"><img src="images/twitter-x.svg" alt="twitter"></a>
+                <a href="https://www.facebook.com/profile.php?id=1471673701" target="_blank"><img
+                        src="images/facebook.svg" alt="facebook"></a>
             </div>
-            <p class="copy">&copy; </p>
+            <p class="copy">&copy; Emeka Thomas Onwugbonu | Nigeria | </p>
             <p class="modified">last modified date</p>
         </footer>
 

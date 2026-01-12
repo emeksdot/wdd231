@@ -1,4 +1,23 @@
 @media screen and (min-width: 600px) {
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .credits-box {
+    display: block;
+    margin-left: 30%;
+    align-self: center;
+  }
+
+  header,
+  nav,
+  main,
+  h1,
+  footer {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+  }
   .hamburger {
     display: none;
   }
@@ -12,5 +31,54 @@
   }
   .navigation ul li a {
     border: none;
+  }
+
+  h1 {
+    padding-left: 10px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.5rem;
+  }
+
+  h1,
+  footer,
+  section {
+    border: 2px solid green;
+  }
+  main > h1:first-child {
+    /* Span from the 1st grid line to the last (4th) */
+    grid-column: 1 / 4;
+  }
+
+  main > section:nth-child(2) {
+    /* Span 2 of the 3 columns */
+    grid-column: span 2;
+  }
+
+  main > section:nth-child(3) {
+    /* Occupies the remaining 1 column */
+    grid-column: span 1;
+  }
+
+  main > section:nth-child(4) {
+    /* Span all 3 columns */
+    grid-column: 1 / 4;
+    width: 100%;
+    height: auto;
+  }
+
+  .list {
+    display: grid;
+    grid-column: 1 / 4;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid green;
+    padding: 0 3rem;
   }
 }

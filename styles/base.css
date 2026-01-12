@@ -1,6 +1,6 @@
-/* ***************************** COLOR SCHEME **************************************** 
+/* ***************************** COLOR SCHEME, PALLETE AND FONT_FAMILY**************************************** 
 #7b3f00, #311900 and #ffffbb
-
+font-family: "Montserrat", sans-serif;
 */
 
 /* ***************************** CSS RESET **************************************** */
@@ -14,6 +14,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr auto;
+  padding: 10px;
 }
 
 /* ***************************** HEADER  **************************************** */
@@ -33,16 +34,16 @@ header img {
 }
 
 header span {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #311900;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-top: 5px;
 }
 
 /* ***************************** NAVIGATION **************************************** */
 
 .hamburger {
-  background-color: none;
+  /* background-color: none; */
+  background: none;
   border: none;
   color: #7b3f00;
   cursor: pointer;
@@ -59,7 +60,7 @@ header span {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* ************************************** */
+/* ******************  ******************** */
 
 .navigation {
   display: none;
@@ -76,10 +77,15 @@ header span {
 }
 .navigation ul li a {
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
   display: block;
   color: #7b3f00;
   padding: 0.9rem 0.625rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
   border-bottom: 1px solid #311900;
+  transition: all 1s;
 }
 .navigation ul li a:hover {
   background-color: #311900;
@@ -89,6 +95,44 @@ header span {
 .navigation ul li.current {
   background-color: rgba(255, 0, 0, 0.3);
 }
+
+h1 {
+  margin-left: 10px;
+}
+
+h2 {
+  text-align: center;
+  background-color: #ffffbb;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  border: 1px solid red;
+}
+
+/* ***************** MAIN ********************* */
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 0.5rem;
+}
+section {
+  border: 2px solid green;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+}
+
+.done {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+/* ***************** FOOTER ********************* */
 
 footer {
   background-color: #ffffbb;
