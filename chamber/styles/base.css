@@ -6,3 +6,39 @@ font-family: "Gravitas One", serif;
 font-family: "Noto Sans", sans-serif;
 
 */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 800px;
+  border: 1px solid red;
+  background-color: aqua;
+  position: relative;
+}
+
+nav {
+}
+
+header {
+}
+
+main {
+}
+
+footer {
+}
+
+nav ul {
+}
+
+nav ul li:nth-child(2) {
+}
+
+nav ul li {
+}
+
+footer {
+}
