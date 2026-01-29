@@ -36,34 +36,39 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+
 </head>
 
 <body>
     <div class="directory-container">
-        <nav>
-            <img src="" alt="home-logo">
-            <span class="title">Port Harcourt Chamber of Commerce</span>
+        <nav id="nav-bar" class="navigation">
+            <a href="#"><img src="images/space-station-moon-alt.svg" alt="home-logo" width="512" height="512"></a>
+            <span class="title">
+                <h4>Port Harcourt Chamber of Commerce</h4>
+            </span>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
-            <span class="theme"></span>
+            <span class="theme"><img src="images/contrast.svg" alt="light and dark theme" alt="home-logo" width="512"
+                    height="512"></span>
             <button id="ham-btn" class="hamburger"></button>
 
         </nav>
+        <div class="nav-box"></div>
         <header>
-            <img src="images/house.svg" alt="logo" width="512" height="512">
             <h1>The Port Harcourt Chamber of Commerce </h1>
-            <!-- <span>Emeka Thomas Onwugbonu</span> -->
-            <button id="ham-btn" class="hamburger"></button>
+            <button></button>
         </header>
 
 
 
         <main></main>
-        <footer>&copy;Emeka Thomas Onwugbonu | BYU Idaho | WDD 231</footer>
+        <footer>&copy;Emeka Thomas Onwugbonu | BYU Idaho | WDD 231 | <span class="modified">last modified date</span>
+        </footer>
         <script src="scripts/filename"></script>
     </div>
 </body>

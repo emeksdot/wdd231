@@ -1,6 +1,37 @@
-/* @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .directory-container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-columns: repeat(12, 1fr); */
   }
-} */
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav span {
+    margin-right: auto;
+  }
+
+  nav ul {
+    display: flex;
+    margin-right: -4rem;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .theme {
+    margin-right: 3rem;
+    margin-left: 4rem;
+  }
+
+  header {
+    background-image: url("../images/banner-large.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 400px;
+  }
+}
