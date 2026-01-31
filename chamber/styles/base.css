@@ -104,9 +104,42 @@ header h1 {
 }
 
 main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 1fr;
+}
+.events-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid red;
+  column-gap: 1rem;
+  margin-bottom: 1rem;
+}
+.business-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid red;
+  column-gap: 1rem;
 }
 
 footer {
+}
+
+.social-box {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-around;
+  column-gap: 1rem;
+}
+
+.social-box a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #311900;
+  border-radius: 50%;
 }
 
 nav ul {
@@ -119,4 +152,31 @@ nav ul li {
 }
 
 footer {
+}
+
+/* Home Page */
+.landing-page {
+  background-image: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  width: 100%;
+}
+.landing-page banner {
+  grid-column: 1 /2;
+  grid-row: 1 / 2;
+}
+.landing-page button {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  order: -1;
+  width: 25%;
+  margin: auto auto;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  letter-spacing: 1.2px;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
