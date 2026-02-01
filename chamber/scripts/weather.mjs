@@ -29,13 +29,23 @@ const displayResults = (data) => {
   weatherIcon.setAttribute("src", iconlink);
   weatherIcon.setAttribute("alt", weatherDescription);
   captionDesc.textContent = `${weatherDescription}`;
+
   const temp = document.createElement('h4');
   temp.innerHTML = `${data.main.temp}&deg;F`;
-  const temp23 = document.createElement('p');
-  const temp23 = document.createElement('p');
-  const temp23 = document.createElement('p');
-  const temp23 = document.createElement('p');
-  details.appendChild(temp);
+  const desc = document.createElement('p');
+  desc.innerHTML = `${data.weather[0].description}`;
+  const high = document.createElement('p');
+  high.innerHTML = `High: ${data.main.temp_max}&deg;F`;
+  const low = document.createElement('p');
+  low.innerHTML = `Low: ${data.main.temp_min}&deg;F`;
+  // const temp23 = document.createElement('p');
+  const humidity = document.createElement('p');
+  humidity.innerHTML = `Humidity: ${data.main.humidity}`;
+  const sunrise = document.createElement('p');
+  sunrise.innerHTML = `Humidity: ${data.sys.sunrise}`;
+  const sunset = document.createElement('p');
+  sunset.innerHTML = `Humidity: ${data.sys.sunset}`;
+  details.append(temp, desc, high, low, humidity, sunrise, sunset);
 };
 
 apiFetch();
