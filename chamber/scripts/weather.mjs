@@ -38,7 +38,6 @@ const displayResults = (data) => {
   high.innerHTML = `High: ${data.main.temp_max}&deg;F`;
   const low = document.createElement('p');
   low.innerHTML = `Low: ${data.main.temp_min}&deg;F`;
-  // const temp23 = document.createElement('p');
   const humidity = document.createElement('p');
   humidity.innerHTML = `Humidity: ${data.main.humidity}`;
   const sunrise = document.createElement('p');
