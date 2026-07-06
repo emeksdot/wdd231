@@ -1,5 +1,57 @@
 @media screen and (min-width: 38rem) {
+
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
     .hamburger {
         display: none;
+    }
+
+    .navbar {
+        display: block;
+        border-bottom: 1px solid gray;
+    }
+
+    .links {
+        display: flex;
+    }
+
+    .navbar a {
+        border: none;
+    }
+
+    /* ******************* MAIN ************************ */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    h1 {
+        grid-column: 1 / 4;
+    }
+
+    .about-me {
+        grid-column: 1 / 3;
+    }
+
+    .courses {
+        grid-column: 1 / 4;
+    }
+
+    #course-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
     }
 }
