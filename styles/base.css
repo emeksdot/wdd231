@@ -98,6 +98,7 @@ header span {
 
 .navbar {
     display: none;
+    width: 100%;
     padding-left: 0.625rem;
 }
 
@@ -135,17 +136,10 @@ header span {
     background-color: #F17300;
 }
 
-.navbar {
-    display: none;
-}
-
 .navbar.show {
     display: block;
 }
 
-.navbar {
-    width: 100%;
-}
 
 /* *********************** MAIN *********************** */
 main {
