@@ -85,6 +85,9 @@ const takenCourses = courses.filter((course) => {
 courses.forEach((course) => {
     const courseBTN = document.createElement("button");
     courseBTN.innerText = `${course.subject} ${course.number}`;
+    if (course.completed == true) {
+        courseBTN.classList.add("completed");
+    }
     courseBox.appendChild(courseBTN);
 })
 

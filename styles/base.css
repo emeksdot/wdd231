@@ -1,4 +1,13 @@
-/* 
+/* **************** COLORS ********************** 
+#1D1E18 dark color
+#EBEBEB pale white color
+#B9F5D8 light green
+#F17300 orange color
+
+*/
+
+
+/* ********************* GOOGLE FONTS ************************
 Raleway: CSS class for a variable style
 .raleway-<uniquifier> {
   font-family: "Raleway", sans-serif;
@@ -58,7 +67,7 @@ header img {
 header span {
     font-size: 1.2rem;
     font-weight: bold;
-    color: blue;
+    color: #1D1E18;
 }
 
 /* ***************** HAMBURGER NAVIGATION ************** */
@@ -94,8 +103,6 @@ header span {
 
 .links {
     list-style-type: none;
-    width: 100%;
-    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
 }
@@ -110,12 +117,22 @@ header span {
     width: 100%;
     text-decoration: none;
     padding: 0.5rem 0.625rem;
-    color: #333;
+    color: #1D1E18;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.5rem;
+    transition: background-color 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .navbar ul li a:hover {
-    background-color: blue;
-    color: red;
+    background-color: #1D1E18;
+    color: #EBEBEB;
+}
+
+.navbar .links li a.current {
+    /* background-color: rgba(255, 0, 0, 0.3); */
+    background-color: #F17300;
 }
 
 .navbar {
@@ -127,7 +144,6 @@ header span {
 }
 
 .navbar {
-    background-color: aqua;
     width: 100%;
 }
 
@@ -151,15 +167,40 @@ section {
 }
 
 section h2 {
-    background-color: black;
+    background-color: #1D1E18;
     color: white;
     width: 100%;
     text-align: center;
     padding: 10px 0.625rem;
 }
 
+section img {
+    border: 2px solid red;
+}
+
 /* ********************** Courses Section************************* */
 #course-box {
     display: grid;
     width: 100%;
+    row-gap: 5px;
+}
+
+.completed {
+    background-color: #B9F5D8;
+}
+
+/* *********************** FOOTER **************************** */
+footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+footer p:last-child {
+    margin-top: 0.125rem;
 }
