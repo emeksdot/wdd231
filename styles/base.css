@@ -100,6 +100,7 @@ header span {
     display: none;
     width: 100%;
     padding-left: 0.625rem;
+    background-color: #EBEBEB;
 }
 
 .links {
@@ -119,7 +120,8 @@ header span {
     text-decoration: none;
     padding: 0.5rem 0.625rem;
     color: #1D1E18;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Montserrat", sans-serif;
+    ;
     font-weight: 400;
     letter-spacing: 0.2rem;
     margin-bottom: 0.5rem;
@@ -155,9 +157,10 @@ section {
     display: grid;
     align-items: center;
     justify-items: center;
-    border: 1px solid red;
+    border: 1px solid #F17300;
     padding: 0.5rem 1rem;
     margin-bottom: 0.5rem;
+    background-color: #EBEBEB;
 }
 
 section h2 {
@@ -166,10 +169,15 @@ section h2 {
     width: 100%;
     text-align: center;
     padding: 10px 0.625rem;
+    font-family: "Google Sans", sans-serif;
+}
+
+section p {
+    font-family: "Raleway", sans-serif;
 }
 
 section img {
-    border: 2px solid red;
+    border: 2px solid #F17300;
 }
 
 /* ********************** Courses Section************************* */
@@ -183,12 +191,30 @@ section img {
     background-color: #B9F5D8;
 }
 
+.choices {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.courses {
+    font-weight: 600;
+}
+
 /* *********************** FOOTER **************************** */
 footer {
     display: grid;
     justify-content: center;
     align-items: center;
     column-gap: 0.5rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+
+}
+
+footer .social-box {
+    display: flex;
+    justify-content: center;
 }
 
 footer p {

@@ -78,17 +78,74 @@ const courses = [
     }
 ]
 
+const all = courses.filter((course) => {
+    return course.subject;
+})
+const cse = courses.filter((course) => {
+    return course.subject === "CSE";
+})
+const wdd = courses.filter((course) => {
+    return course.subject === "WDD";
+})
+
+
+const choice = document.querySelector(".choices");
+const courseChoices = choice.querySelectorAll("a");
+
 const courseBox = document.querySelector("#course-box");
+const credits = document.querySelector("#credits");
+let totalCredits;
 const takenCourses = courses.filter((course) => {
     return course.completed == true;
 })
-courses.forEach((course) => {
-    const courseBTN = document.createElement("button");
-    courseBTN.innerText = `${course.subject} ${course.number}`;
-    if (course.completed == true) {
-        courseBTN.classList.add("completed");
-    }
-    courseBox.appendChild(courseBTN);
-})
+
+const courseBTNS = (array) => {
+    document.querySelector("#course-box").innerHTML = "";
+    array.forEach((course) => {
+        const courseBTN = document.createElement("button");
+        courseBTN.innerText = `${course.subject} ${course.number}`;
+        if (course.completed == true) {
+            courseBTN.classList.add("completed");
+        }
+        courseBox.appendChild(courseBTN);
+    })
+}
+
+courseBTNS(courses);
+for (let index = 0; index < courseChoices.length; index++) {
+    courseChoices[index].addEventListener("click", () => {
+        if (courseChoices[index].innerText === "ALL") {
+            courseBTNS(courses);
+            totalCredits = all.reduce((acc, course) => acc + course.credits, 0);
+            credits.innerHTML = totalCredits;
+        }
+        else if (courseChoices[index].innerText === "CSE") {
+            courseBTNS(cse);
+            totalCredits = cse.reduce((acc, course) => acc + course.credits, 0);
+            credits.innerHTML = totalCredits;
+        }
+        else if (courseChoices[index].innerText === "WDD") {
+            courseBTNS(wdd);
+            totalCredits = wdd.reduce((acc, course) => acc + course.credits, 0);
+            credits[0].innerText = totalCredits;
+        }
+    })
+
+
+    // const totalCost = items.reduce((accumulator, currentObject) => {
+    //     return accumulator + currentObject.price;
+    // }, 0);
+}
+
+
+
+// courses.forEach((course) => {
+//     const courseBTN = document.createElement("button");
+//     courseBTN.innerText = `${course.subject} ${course.number}`;
+//     if (course.completed == true) {
+//         courseBTN.classList.add("completed");
+//     }
+//     courseBox.appendChild(courseBTN);
+// })
 
 // courseBox.textContent = "BullSHIT";
