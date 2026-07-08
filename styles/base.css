@@ -168,7 +168,7 @@ section h2 {
     color: white;
     width: 100%;
     text-align: center;
-    padding: 10px 0.625rem;
+    padding: 0.625rem;
     font-family: "Google Sans", sans-serif;
 }
 
@@ -178,6 +178,7 @@ section p {
 
 section img {
     border: 2px solid #F17300;
+    padding: 0.3125rem;
 }
 
 /* ********************** Courses Section************************* */
