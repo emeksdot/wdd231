@@ -2,7 +2,6 @@ const gridButton = document.querySelector("#grid-btn");
 const listButton = document.querySelector("#list-btn");
 const viewBox = document.querySelector("#display-box");
 
-gridButton.addEventListener("click", getContent);
 
 const displayListContent = (contentArr) => {
     document.querySelector("#display-box").innerHTML = "";
@@ -10,13 +9,13 @@ const displayListContent = (contentArr) => {
         // list card build goes here
         let listCard = document.createElement("section");
         let listName = document.createElement("p");
-        let cardImg = document.createElement("section");
-        let cardDesc = document.createElement("section");
-        let companyName = document.createElement("h2");
-        let companyTag = document.createElement("h4");
-    }
+        let listAddress = document.createElement("p");
+        let listPhone = document.createElement("p");
+        let listWeb = document.createElement("p");
+    });
+}
 
-const displayContent = (contentArr) => {
+const displayGridContent = (contentArr) => {
     document.querySelector("#display-box").innerHTML = "";
     contentArr.map(async content => {
         // card build goes here
@@ -75,7 +74,7 @@ async function getContent() {
         console.log(data);
         console.log(typeof data);
         console.log(Array.isArray(data));
-        displayContent(data.members);
+        displayGridContent(data.members);
         // return data;
     } catch (error) {
         console.error(error);
@@ -87,6 +86,8 @@ async function getContent() {
 }
 
 getContent();
+// gridButton.addEventListener("click", getContent);
+
 // displayContent(target);
 
 
