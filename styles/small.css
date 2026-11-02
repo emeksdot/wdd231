@@ -1,0 +1,55 @@
+/* 
+Requirements:
+    Site was designed for screen width of 320px to 1600px
+
+    Color Scheme:
+    Text #
+    Font Color #
+
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: red;
+}
+
+/* *******************  HAMBURGER NAVIGATION****************** */
+.hamburger {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before{
+    content: "\00";
+}
