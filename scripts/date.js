@@ -8,5 +8,5 @@ const options = {
 const datePlace = document.querySelector("#dateYear");
 datePlace.textContent = new Date().getFullYear();
 
-const dateOfModificationNew = document.querySelector("#lastModified");
-dateOfModificationNew.innerHTML = document.lastModified;
+const dateOfModification = document.querySelector("#timeLastModified");
+dateOfModification.innerHTML = document.lastModified;

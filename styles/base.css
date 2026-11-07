@@ -108,8 +108,8 @@ header span {
     text-decoration: none;
     padding: 0.5rem 0.625rem;
     color: #1D1E18;
-    font-family: "Montserrat", sans-serif;
-    ;
+    font-family: var(--paragraph-font);
+
     font-weight: 400;
     letter-spacing: 0.2rem;
     margin-bottom: 0.5rem;
@@ -117,13 +117,18 @@ header span {
 }
 
 .navbar ul li a:hover {
-    background-color: #1D1E18;
-    color: #EBEBEB;
+    background-color: var(--colorprimary-dark);
+    color: var(--colorprimary-light);
 }
 
 .navbar .links li a.current {
     /* background-color: rgba(255, 0, 0, 0.3); */
     background-color: #F17300;
+}
+
+.navbar .links li a.current:hover {
+    background-color: var(--completedcolor);
+    color: var(--colorsecondary-light);
 }
 
 .navbar.show {
@@ -167,7 +172,7 @@ section p {
 }
 
 section img {
-    border: 2px solid #F17300;
+    border: 2px solid var(--coloraccent);
     padding: 0.3125rem;
 }
 
