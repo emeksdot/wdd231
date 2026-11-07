@@ -1,55 +1,241 @@
-/* 
-Requirements:
-    Site was designed for screen width of 320px to 1600px
-
-    Color Scheme:
-    Text #
-    Font Color #
+/* **************** COLORS ********************** 
+#1D1E18 dark color
+#EBEBEB pale white color
+#B9F5D8 light green
+#F17300 orange color
 
 */
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+:root {
+    --colorprimary-light: #ffc0bf;
+    --colorprimary-dark: #000012;
+    --colorsecondary-light: #ffc0bf;
+    --colorsecondary-dark: #000012;
+    --highlight-link: #f17300;
+    --coloraccent: white;
+    --coloraccent2: white;
+    /* --fontfamily: white; */
+    --completedcolor: #08ad5d;
+    --heading-fontfamily: "Ubuntu", sans-serif;
+    --heading2fontfamily: "Montserrat", sans-serif;
+    --paragraph-font: ;
+    --sub-heading: 400 32px var(--ff);
+    --sub-heading: 400 24px var(--ff);
+    --sub-heading2: white;
+    --button: 500 20px var(--fonfamily);
+    --button2: 500 18px var(--fonfamily);
+
+
+    --color1: #ffc0bf;
+    /* Good  */
+    --color1: #f0f3f8;
+    /* Good  */
+    --color1: #c2b1d5;
+    /* Good  */
+    --color1: #1c82ea;
+    /* Good  */
+    --color1: #b9f5d8;
+    /* Good  */
+    --color1: rgb();
+    /* Good  */
+    --color1: rgb(241, 115, 0);
+    /* Good  */
 }
 
 
-/* HEADER */
+/* ********************* GOOGLE FONTS ************************
+    font-family: "Ubuntu", sans-serif;
+    font-family: "Nunito", sans-serif;
+    font-family: "Montserrat", sans-serif; 
+
+*/
+
+
+.container {
+    margin: 1rem auto;
+    padding: 10px;
+}
+
+
+
 header {
     display: grid;
-    grid-template-columns: 24px auto 44px;
-    padding: 5px 0 5px 10px;
+    grid-template-columns: 24px auto 45px;
+    padding: 0.3125rem 0 0.3125rem 0.625rem;
+    border-bottom: 1px solid gray;
+    column-gap: 0.625rem;
     align-items: end;
-    border-bottom: solid 1px #ddd;
-    column-gap: 8px;
+
 }
 
 header img {
-    display: block;
     width: 100%;
     height: auto;
+    display: block;
+    padding-bottom: 0.3125rem;
 }
 
 header span {
     font-size: 1.2rem;
-    color: red;
+    font-weight: bold;
+    color: #1D1E18;
 }
 
-/* *******************  HAMBURGER NAVIGATION****************** */
+/* ***************** HAMBURGER NAVIGATION ************** */
+
 .hamburger {
-    background: none;
     border: none;
-    color: red;
+    background: none;
+    background-color: transparent;
     cursor: pointer;
-
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
 }
 
-.hamburger::after {
+.hamburger::before {
     content: "\2630";
-    font-size: 2rem;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
 }
 
-.hamburger.show::before{
-    content: "\00";
+.hamburger.show::before {
+    content: "\00d7";
+}
+
+/* **************** NAVIGATION********************** */
+
+
+.navbar {
+    display: none;
+    width: 100%;
+    padding-left: 0.625rem;
+    background-color: #EBEBEB;
+}
+
+.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links li {
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.links li a {
+    width: 100%;
+    text-decoration: none;
+    padding: 0.5rem 0.625rem;
+    color: #1D1E18;
+    font-family: "Montserrat", sans-serif;
+    ;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.5rem;
+    transition: background-color 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navbar ul li a:hover {
+    background-color: #1D1E18;
+    color: #EBEBEB;
+}
+
+.navbar .links li a.current {
+    /* background-color: rgba(255, 0, 0, 0.3); */
+    background-color: #F17300;
+}
+
+.navbar.show {
+    display: block;
+}
+
+
+/* *********************** MAIN *********************** */
+main {
+    display: grid;
+    padding-left: 0.625rem;
+}
+
+h1 {
+    /* padding-left: 0.625rem; */
+    font-family: var(--heading-fontfamily);
+    color: var(--colorprimary-dark);
+}
+
+section {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid #F17300;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #EBEBEB;
+}
+
+section h2 {
+    background-color: #1D1E18;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0.625rem;
+    font-family: "Google Sans", sans-serif;
+}
+
+section p {
+    font-family: "Raleway", sans-serif;
+}
+
+section img {
+    border: 2px solid #F17300;
+    padding: 0.3125rem;
+}
+
+/* ********************** Courses Section************************* */
+#course-box {
+    display: grid;
+    width: 100%;
+    row-gap: 5px;
+}
+
+.completed {
+    background-color: var(--completedcolor);
+}
+
+.choices {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.courses {
+    font-weight: 600;
+}
+
+/* *********************** FOOTER **************************** */
+footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+
+}
+
+footer .social-box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+footer p:last-child {
+    margin-top: 0.125rem;
 }
