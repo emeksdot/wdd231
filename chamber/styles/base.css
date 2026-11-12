@@ -1,0 +1,228 @@
+/* **************** COLORS ***********************/
+/* https://coolors.co/97ead2-8cc7a1-f9f9be-74226c-4b2142 */
+
+:root {
+    --colorprimary-light: #ffc0bf;
+    --colorprimary-dark: #000012;
+    --colorsecondary-light: #ffc0bf;
+    --colorsecondary-dark: #000012;
+    --highlight-link: #f17300;
+    --coloraccent: #f17300;
+    --coloraccent2: white;
+    --completedcolor: #08ad5d;
+    --heading-fontfamily: "Ubuntu", sans-serif;
+    --heading2fontfamily: "Montserrat", sans-serif;
+    --paragraph-font: "Nunito", sans-serif;
+    --sub-heading: 400 32px var(--ff);
+    --sub-heading: 400 24px var(--ff);
+    --sub-heading2: white;
+
+
+}
+
+
+/* ********************* GOOGLE FONTS ************************
+    font-family: "Ubuntu", sans-serif;
+    font-family: "Nunito", sans-serif;
+    font-family: "Montserrat", sans-serif; 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Oregano:ital@0;1&display=swap" rel="stylesheet">
+
+*/
+
+
+.container {
+    margin: 1rem auto;
+    padding: 10px;
+}
+
+
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 45px;
+    padding: 0.3125rem 0 0.3125rem 0.625rem;
+    border-bottom: 1px solid var(--colorprimary-dark);
+    column-gap: 0.625rem;
+    align-items: end;
+
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 0.3125rem;
+}
+
+header span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1D1E18;
+}
+
+/* ***************** HAMBURGER NAVIGATION ************** */
+
+.hamburger {
+    border: none;
+    background: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: var(--heading-fontfamily);
+    font-weight: 800;
+}
+
+.hamburger::before {
+    content: "\2630";
+    border: none;
+    font-family: var(--heading-fontfamily);
+    font-size: 1.5rem;
+}
+
+.hamburger.show::before {
+    content: "\00d7";
+}
+
+/* **************** NAVIGATION********************** */
+
+
+.navbar {
+    display: none;
+    width: 100%;
+    padding-left: 0.625rem;
+    background-color: #EBEBEB;
+}
+
+.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links li {
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.links li a {
+    width: 100%;
+    text-decoration: none;
+    padding: 0.5rem 0.625rem;
+    color: #1D1E18;
+    font-family: var(--paragraph-font);
+
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.5rem;
+    transition: background-color 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navbar ul li a:hover {
+    background-color: var(--colorprimary-dark);
+    color: var(--colorprimary-light);
+}
+
+.navbar .links li a.current {
+    /* background-color: rgba(255, 0, 0, 0.3); */
+    background-color: #F17300;
+}
+
+.navbar .links li a.current:hover {
+    background-color: var(--completedcolor);
+    color: var(--colorsecondary-light);
+}
+
+.navbar.show {
+    display: block;
+}
+
+
+/* *********************** MAIN *********************** */
+main {
+    display: grid;
+    padding-left: 0.625rem;
+}
+
+h1 {
+    /* padding-left: 0.625rem; */
+    font-family: var(--heading-fontfamily);
+    color: var(--colorprimary-dark);
+}
+
+section {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid #F17300;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #EBEBEB;
+}
+
+section h2 {
+    background-color: #1D1E18;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0.625rem;
+    font-family: "Google Sans", sans-serif;
+}
+
+section p {
+    font-family: "Raleway", sans-serif;
+}
+
+section img {
+    border: 2px solid var(--coloraccent);
+    padding: 0.3125rem;
+}
+
+/* ********************** Courses Section************************* */
+#course-box {
+    display: grid;
+    width: 100%;
+    row-gap: 5px;
+}
+
+.completed {
+    background-color: var(--completedcolor);
+}
+
+.choices {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.courses {
+    font-weight: 600;
+}
+
+/* *********************** FOOTER **************************** */
+footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+
+}
+
+footer .social-box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+footer p:last-child {
+    margin-top: 0.125rem;
+}

@@ -101,6 +101,7 @@ header span {
     height: 45px;
     display: flex;
     align-items: center;
+    color: #f9f9be;
 }
 
 .links li a {
