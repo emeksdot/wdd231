@@ -3,7 +3,7 @@ const listButton = document.querySelector(".listButton");
 const displayContainer = document.querySelector("#content");
 
 // Function to display items as a grid
-function displayGrid() {
+function displayGrid(contentArr) {
     displayContainer.innerHTML = "";
     contentArr.map(async content => {
         // card build goes here
@@ -54,7 +54,7 @@ function displayGrid() {
 }
 
 // Function to display items as a list
-function displayList() {
+function displayList(contentArr) {
     displayContainer.innerHTML = "";
     contentArr.map(async content => {
         // list card build goes here
@@ -81,17 +81,29 @@ function displayList() {
 
 }
 
-async function getContent() {
+async function getGridContent() {
     try {
         const reponse = await fetch("data/members.json");
         const data = await reponse.json()
-        console.log(data);
+        console.log(data.members);
         displayGrid(data.members);
         // return data;
     } catch (error) {
         console.error(error);
     }
 }
+async function getListContent() {
+    try {
+        const reponse = await fetch("data/members.json");
+        const data = await reponse.json()
+        console.log(data.members);
+        displayList(data.members);
+        // return data;
+    } catch (error) {
+        console.error(error);
+    }
+}
 
-gridButton.addEventListener("click", getContent(displayGrid));
-// listButton.addEventListener("click", getContent(displayList));
+getListContent();
+gridButton.addEventListener("click", getGridContent());
+// listButton.addEventListener("click", getListContent());

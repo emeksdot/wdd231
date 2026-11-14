@@ -213,8 +213,8 @@ nav.hide {
 
 .navbar .links li a.current {
     /* background-color: rgba(255, 0, 0, 0.3); */
-background-color: #F17300;
-}
+/* background-color: #F17300; */
+/* } */
 
 .navbar .links li a.current:hover {
     background-color: var(--completedcolor);
@@ -225,12 +225,12 @@ background-color: #F17300;
     display: block;
 }
 
-*/
+
 
 /* *********************** MAIN *********************** */
 main {
-    /* display: grid;
-    padding-left: 0.625rem; */
+    display: grid;
+    padding-left: 0.625rem;
 }
 
 h1 {
