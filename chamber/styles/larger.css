@@ -12,31 +12,52 @@
         /* grid-template-columns: 24px auto; */
     }
 
+
+
     .hamburger {
         display: none;
     }
 
-    .navbar {
+    header .nav-box {
         display: block;
-        border-bottom: 1px solid gray;
     }
+
+
+    header .nav-box ul {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+    }
+
+    header .nav-box ul li a {
+        height: 50px;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: black;
+    }
+
+    header.theme-box a svg {
+        position: absolute;
+        top: 2rem;
+        width: 24px;
+    }
+
+
+    nav {
+        display: none;
+    }
+
+
 
     .links {
         display: flex;
     }
 
-    .navbar a {
-        border: none;
-    }
 
-    .nav-box {
-        display: block;
-    }
 
-    .nav-box ul {
-        display: flex;
 
-    }
 
     /* ******************* MAIN ************************ */
     main {

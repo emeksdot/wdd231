@@ -58,10 +58,8 @@
 header {
     display: flex;
     justify-content: end;
-    border: 2px solid black;
     width: 100%;
-    /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
-    /* padding: 0.3125rem 0 0.3125rem 0.625rem; */
+    padding: 0.3125rem 0 0.3125rem 0.625rem;
     /* 
     border-bottom: 1px solid var(--colorprimary-dark);
     column-gap: 0.625rem;
@@ -71,23 +69,50 @@ header {
 
 header section:first-child {
     margin-right: auto;
+    display: flex;
+    align-items: center;
 }
 
-header img {
-    /* width: 100%;
+header.logo-box img {
+    width: 100%;
     height: auto;
     display: block;
-    padding-bottom: 0.3125rem; */
+    padding-bottom: 0.3125rem;
 }
 
+
+
+header.theme-box {
+    display: flex;
+    align-items: center;
+}
+
+header.theme-box a {
+    position: relative;
+    top: 2rem;
+    height: 50px;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+
+
 header span {
-    /* font-size: 1.2rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #1D1E18; */
+    color: #1D1E18;
+    margin-left: 5px;
 }
 
 header nav ul {
     display: none;
+    /* display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center; */
 }
 
 .logo-box {
@@ -96,6 +121,25 @@ header nav ul {
 
 .nav-box {
     display: none;
+}
+
+
+nav li {
+    width: 100%;
+    height: 50px;
+    color: red;
+    background-color: red;
+
+}
+
+nav a {
+    height: 50px;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+
 }
 
 /* ***************** HAMBURGER NAVIGATION ************** */
@@ -108,18 +152,24 @@ header nav ul {
     font-size: 1.2rem;
     font-family: var(--heading-fontfamily);
     font-weight: 800;
+    margin-right: 10px;
 }
 
 .hamburger::before {
-    content: "\2630";
+    content: "\00d7";
     border: none;
     font-family: var(--heading-fontfamily);
     font-size: 1.5rem;
 }
 
 .hamburger.show::before {
-    content: "\00d7";
+    content: "\2630";
 }
+
+nav.hide {
+    display: none;
+}
+
 
 /* **************** NAVIGATION********************** */
 
