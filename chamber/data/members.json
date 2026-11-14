@@ -1,0 +1,112 @@
+{
+    "members": [
+        {
+            "name": "Genesis Centre",
+            "address": "39 Tombia Street, GRA Phase 2, Port Harcourt",
+            "phoneNumber": "0805 219 8608",
+            "websiteURL": "https://genesiscinemas.com/genesis-center-port-harcourt/",
+            "imageURL": "https://www.finelib.com/images/listings/tn/9811_company_logo.JPG",
+            "membershipLevel": 3,
+            "tagLine": "ultra-modern shopping and entertainment"
+        },
+        {
+            "name": "Jankaramall NG",
+            "address": "17 Phoenix Store Complex",
+            "phoneNumber": "0809 526 5272",
+            "websiteURL": "N/A",
+            "imageURL": "https://www.finelib.com/images/listings/tn/69338_company_logo.JPG",
+            "membershipLevel": 1,
+            "tagLine": "One Site for All Your Needs!"
+        },
+        {
+            "name": "Kangro Mart - Port Harcourt",
+            "address": "Steve House, Gbaka Gbaka Avenue, Trans Woji Road",
+            "phoneNumber": "08126427528",
+            "websiteURL": "https://kangromart.com/",
+            "imageURL": "https://media.licdn.com/dms/image/v2/C4D03AQGvDRtv6z1K5A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1518436256062?e=1785369600&v=beta&t=wA753tbFAHBraRAxR77M1IxC0P3HhK00iymeCTOIcrg",
+            "membershipLevel": 3,
+            "tagLine": "Home for the Smart Shoppers"
+        },
+        {
+            "name": "ANSA Systems Limited",
+            "address": "97, Olu-Obasanjo Road, Port Harcourt, River, Nigeria",
+            "phoneNumber": "0803 899 5858",
+            "websiteURL": "https://ansasystemsltd.com/",
+            "imageURL": "https://www.finelib.com/images/listings/tn/10649_company_logo.png",
+            "membershipLevel": 3,
+            "tagLine": "We Supply All Your Computers, Smart Phones and Accessories"
+        },
+        {
+            "name": "Chipscafe & Communications",
+            "address": "27 Agip Road, Rumueme, Port-Harcourt, Rivers State",
+            "phoneNumber": "0803 309 2787",
+            "websiteURL": "https://www.Chipscafe.com/",
+            "imageURL": "https://www.finelib.com/images/listings/tn/878_company_logo.gif",
+            "membershipLevel": 2,
+            "tagLine": "Quality Products and Services"
+        },
+        {
+            "name": "Cinfores Limited",
+            "address": "No 60 Prof. T.N. Okujagu Road,Off Dr. Peter Odili Road, Trans Amadi Industrial Layout",
+            "phoneNumber": "0903 805 9682",
+            "websiteURL": "https://cinfores.com/",
+            "imageURL": "https://www.finelib.com/images/listings/tn/45469_company_logo.JPG",
+            "membershipLevel": 3,
+            "tagLine": "poised to make you relevant"
+        },
+        {
+            "name": "Sommzy Global Communications",
+            "address": "No 5 Nta Road Rumuokwuta, Port Harcout, River State",
+            "phoneNumber": "0806 145 0621",
+            "websiteURL": "https://www.sommzyglobal.com.ng/",
+            "imageURL": "https://www.finelib.com/images/listings/tn/125485_company_logo.jpg",
+            "membershipLevel": 2,
+            "tagLine": "deals with all kinds of computing devices"
+        },
+        {
+            "name": "Alpha Computers",
+            "address": "Road 6 FHE Woji, Port Harcourt, Rivers State Nigeria",
+            "phoneNumber": "0803 734 5596",
+            "websiteURL": "https://www.alphacomputersph.com/",
+            "imageURL": "https://www.finelib.com/images/listings/tn/45130_company_logo.JPG",
+            "membershipLevel": 1,
+            "tagLine": ".Best in typesetting, printing, photocopying etc"
+        },
+        {
+            "name": "GrandVenice Hotel and Suites",
+            "address": "Plot 19, Igwe Family Layout Rumuogba, Off Ecobank, Eliada Layout",
+            "phoneNumber": "0703 935 0238",
+            "websiteURL": "https://www.grandvenicenigeria.com/",
+            "imageURL": "https://www.finelib.com/images/listings/tn/7511_company_logo.JPG",
+            "membershipLevel": 1,
+            "tagLine": "Seamlessly Integrating Technology for Business Growth"
+        },
+        {
+            "name": "Exsuntra Solutions",
+            "address": "105 Olu Obasanjo Road, Port-Harcourt, Rivers Nigeria",
+            "phoneNumber": "0703 694 0307",
+            "websiteURL": "https://exsuntrasolutions.com/",
+            "imageURL": "https://www.finelib.com/images/listings/tn/1779_company_logo.JPG",
+            "membershipLevel": "(1=member, 2=silver, 3=gold)",
+            "tagLine": "Solid Solutions Deployed"
+        },
+        {
+            "name": "Dmatel Gold Hotel",
+            "address": "91 Stadium Road, Rumuomasi Port Harcourt, Rivers State Nigeria",
+            "phoneNumber": "0909 076 3838",
+            "websiteURL": "http://www.dmatelhotels.com/",
+            "imageURL": "https://www.finelib.com/images/listings/tn/45086_company_logo.JPG",
+            "membershipLevel": 2,
+            "tagLine": "city view accommodation provider"
+        },
+        {
+            "name": "Mildred & Gabby",
+            "address": "No 17 Aba/Port Harcourt Express Road",
+            "phoneNumber": "08098197093",
+            "websiteURL": "https://www.sm&b.com/",
+            "imageURL": "images/vecteezyRose.jpg",
+            "membershipLevel": 3,
+            "tagLine": "Luxury Goods Defined"
+        }
+    ]
+}

@@ -9,7 +9,7 @@
     }
 
     header {
-        grid-template-columns: 24px auto;
+        /* grid-template-columns: 24px auto; */
     }
 
     .hamburger {
@@ -27,6 +27,15 @@
 
     .navbar a {
         border: none;
+    }
+
+    .nav-box {
+        display: block;
+    }
+
+    .nav-box ul {
+        display: flex;
+
     }
 
     /* ******************* MAIN ************************ */
